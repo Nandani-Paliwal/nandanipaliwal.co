@@ -2,13 +2,10 @@
 
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-
 import Link from "next/link";
 import { Popover } from "@headlessui/react";
 import { AnimatePresence, motion } from "framer-motion";
-
 import Button from "../design-system/button";
-
 import Navlinks from "./nav-links";
 import { type SVGAttributes } from "react";
 
@@ -37,6 +34,7 @@ function ChevronUpIcon(props: SVGAttributes<SVGElement>) {
     </svg>
   );
 }
+
 function MobileNavLink({ children, ...props }: any) {
   return (
     <Popover.Button
@@ -52,7 +50,7 @@ function MobileNavLink({ children, ...props }: any) {
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -62,15 +60,6 @@ const Header = () => {
     return null;
   }
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => {
-      if(prevTheme === 'Dark'){
-          return 'Light'
-      }
-
-      return "Dark"
-  })
-  }
   return (
     <header className="fixed z-[9999] w-full bg-transparent  backdrop-blur-sm">
       <nav>
@@ -114,9 +103,11 @@ const Header = () => {
             </div>
             <div
               className="cursor-pointer"
-              onClick={toggleTheme}
+              onClick={() => {
+                setTheme(resolvedTheme === "light" ? "dark" : "light");
+              }}
             >
-              {resolvedTheme === "Light" ? (
+              {resolvedTheme === "light" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
