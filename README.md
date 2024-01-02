@@ -1,10 +1,10 @@
 # :sparkles: [nandanipaliwal.co](https://nandanipaliwal.co) :sparkles:
 
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https://nandanipaliwal.co)](https://yourwebsite.com)
-[![GitHub issues](https://img.shields.io/github/issues/sarthakjdev/sarthaks-portfolio.svg)](https://github.com/nandanipaliwal/nandanipaliwal-portfolio/issues/)
-[![GitHub forks](https://img.shields.io/github/forks/sarthakjdev/sarthaks-portfolio.svg)](https://github.com/nandanipaliwal/nandanipaliwal-portfolio/network)
-[![GitHub stars](https://img.shields.io/github/stars/sarthakjdev/sarthaks-portfolio.svg)](https://github.com/nandanipaliwal/nandanipaliwal-portfolio/stargazers)
-[![GitHub license](https://img.shields.io/github/license/sarthakjdev/sarthaks-portfolio.svg)](https://github.com/nandanipaliwal/nandanipaliwal-portfolio/blob/master/LICENSE)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https://nandanipaliwal.co)](https://nandanipaliwal.co)
+[![GitHub issues](https://img.shields.io/github/issues/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal.co/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/network)
+[![GitHub stars](https://img.shields.io/github/stars/sNandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/blob/master/LICENSE)
 
 ### :hammer_and_wrench: Built With
 
@@ -19,7 +19,7 @@ To get a local copy up and running, follow these simple steps.
 
 ```bash
 # Clone the repo
-git clone https://github.com/YourUsername/sarthaks-portfolio.git
+git clone https://github.com/Nandani-Paliwal/nandanipaliwal.co.git
 # Install NPM packages
 pnpm install
 ```
