@@ -1,11 +1,5 @@
 # :sparkles: [nandanipaliwal.co](https://nandanipaliwal.co) :sparkles:
 
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https://nandanipaliwal.co)](https://nandanipaliwal.co)
-[![GitHub issues](https://img.shields.io/github/issues/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal.co/issues)
-[![GitHub forks](https://img.shields.io/github/forks/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/network)
-[![GitHub stars](https://img.shields.io/github/stars/sNandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/stargazers)
-[![GitHub license](https://img.shields.io/github/license/Nandani-Paliwal/nandanipaliwal.svg)](https://github.com/Nandani-Paliwal/nandanipaliwal/blob/master/LICENSE)
-
 ### :hammer_and_wrench: Built With
 
 -   [Next.js](https://nextjs.org/)
