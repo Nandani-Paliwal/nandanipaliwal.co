@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       {/* hero section */}
-      <div className="mx-auto flex max-w-2xl flex-col items-center justify-evenly pt-24 text-gray-800 lg:pb-5 xl:max-w-7xl xl:flex-row-reverse xl:justify-center xl:pt-24">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-evenly pt-24 text-gray-800 lg:pb-5 xl:max-w-7xl xl:flex-row-reverse xl:justify-center xl:pt-24">
         <div className="relative mb-10 flex select-none xl:mb-16">
 			<Image
             alt="my-avatar"
