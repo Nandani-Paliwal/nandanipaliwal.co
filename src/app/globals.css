@@ -16,28 +16,16 @@
   }
 } */
 
-.gradient-wrapper_whitescaleBorder {
+.gradient-wrapper_primaryscaleBorder {
   -webkit-animation: spinGradient 5s linear infinite;
   animation: spinGradient 5s linear infinite;
   filter: blur(6px);
   background: conic-gradient(
       transparent 135deg,
-      #ffffff 180deg,
+      #F87C56 180deg,
       transparent 255deg
     ),
-    conic-gradient(transparent -45deg, #ffffff 0deg, transparent 75deg);
-}
-
-.gradient-wrapper_blackscaleBorder {
-  -webkit-animation: spinGradient 5s linear infinite;
-  animation: spinGradient 5s linear infinite;
-  filter: blur(6px);
-  background: conic-gradient(
-      transparent 135deg,
-      #121212 180deg,
-      transparent 255deg
-    ),
-    conic-gradient(transparent -45deg, #121212 0deg, transparent 75deg);
+    conic-gradient(transparent -45deg, #F87C56 0deg, transparent 75deg);
 }
 @keyframes spinGradient {
   0% {

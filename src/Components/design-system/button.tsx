@@ -15,8 +15,8 @@ const buttonClassVariants = cva(
 			},
 			size: {
 				small: 'rounded-md px-2.5 py-1.5 text-xs',
-				medium: 'rounded-lg px-3 py-2 text-sm',
-				large: 'rounded-lg px-4 py-2.5 text-base'
+				medium: 'rounded-full px-4 py-2 text-sm',
+				large: 'rounded-full px-4 py-2.5 text-base'
 			},
 			variant: {
 				filled: 'focus:ring-2 focus:ring-offset-2 shadow',
@@ -59,8 +59,9 @@ const buttonClassVariants = cva(
 				intent: 'primary',
 				variant: 'outline',
 				className:
-					// 'bg-transparent hover:bg-primary-50 border-primary-500 text-primary-600 hover:text-primary-700 dark:text-accent-500 dark:border-accent-600 dark:hover:bg-accent-900 dark:hover:text-accent-400'
-					'bg-transparent hover:bg-primary-50 border-primary-500 text-primary-600 hover:text-primary-700'
+					// 'bg-transparent hover:bg-primary-50 border-primary-500 text-primary-600 hover:text-primary-700 dark:text-accent-500 dark:border-accent-600 dark:hover:bg-accent-900 dark:hover:text-accent-400
+					'dark:bg-white dark:text-black  text-white bg-black'
+					
 			},
 			{
 				intent: 'secondary',
