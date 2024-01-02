@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { type VariantProps, cva } from 'class-variance-authority'
 import React, { Fragment, type HTMLAttributes } from 'react'
-import { twMerge } from 'tailwind-merge'
+import { clsx } from 'clsx';
 
 const customModalClassVariants = cva('relative z-10', {
 	variants: {
@@ -62,7 +62,7 @@ const CustomModal: React.FC<React.PropsWithChildren<CustomModalProps>> = ({
 		<Transition appear show={isOpen} as={Fragment}>
 			<Dialog
 				as="div"
-				className={twMerge(
+				className={clsx(
 					customModalClassVariants({ className, position, size, dismissible }),
 					'relative z-10'
 				)}
