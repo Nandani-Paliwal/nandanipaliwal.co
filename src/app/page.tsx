@@ -7,18 +7,18 @@ export default function Home() {
   return (
     <main>
       {/* hero section */}
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-evenly pt-24 text-gray-800 lg:pb-5 xl:max-w-7xl xl:flex-row-reverse xl:justify-center xl:pt-24">
-        <div className="relative mb-10 flex select-none xl:mb-16">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-evenly pt-24 text-gray-800 lg:pb-5  xl:flex-row-reverse xl:justify-center xl:pt-24 ">
+        <div className="mb-10  flex select-none xl:mb-16 w-fit">
 			<Image
             alt="my-avatar"
             loading="lazy"
-            width="300"
-            height="300"
-            className="aspect-square rounded-full object-contain"
+            width="400"
+            height="400"
+            className="aspect-square rounded-full object-contain "
             src={"/my-avatar.png"}
           />
         </div>
-        <div className="flex flex-col text-center xl:mr-20 xl:text-left">
+        <div className="flex flex-col text-center  xl:text-left">
           <div className="mb-2">
             <h1 className="mb-2 text-4xl font-bold md:text-5xl text-primary-500">
               Nandani Paliwal
