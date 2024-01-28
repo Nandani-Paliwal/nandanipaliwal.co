@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
 import useMousePosition from "../utils/use-mouse-position";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import ToggleTheme from "../Components/toggle-theme";
-import About from "../Components/about";
+
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -55,7 +53,7 @@ export default function Home() {
               About Me
             </p>
             <h2 className=" text-5xl sm:text-6xl lg:text-7xl max-w-5xl font-bold ">
-              I'm a National level Chess player and is good in playing white and
+              I &rsquo m a National level Chess player and is good in playing white and
               knows how to move her queen.
             </h2>
           </div>
@@ -79,7 +77,7 @@ export default function Home() {
               About Me
             </p>
             <h2 className=" text-5xl sm:text-6xl lg:text-7xl max-w-5xl font-bold text-gray-600 dark:text-secondary">
-              I'm Frontend Developer who is leaning to create some awesome
+              I &rsquo m Frontend Developer who is leaning to create some awesome
               animations on the canvas.
             </h2>
           </div>
