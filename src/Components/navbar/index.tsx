@@ -49,7 +49,6 @@ function MobileNavLink({ children, ...props }: any) {
 }
 
 const Header = () => {
- 
   return (
     <header className="fixed z-50 w-full bg-transparent  backdrop-blur-sm">
       <nav className="xl:max-w-5xl max-w-xl md:max-w-2xl mx-auto">
@@ -64,7 +63,9 @@ const Header = () => {
               <Navlinks />
             </div>
           </div>
-          <span className="flex lg:hidden"><ToggleTheme  /></span>
+          <span className="flex lg:hidden">
+            <ToggleTheme />
+          </span>
           <div className="flex items-center gap-6">
             <div className="rounded-md z-10">
               <Link href="" className="">
@@ -78,11 +79,11 @@ const Header = () => {
                       aria-hidden="true"
                       className=" duration-900  absolute bottom-0 left-0 right-0 top-0 block  opacity-0 transition-opacity ease-linear"
                     ></span>
-                    <span className="relative  z-50">
+                    <span className="hidden lg:flex">
                       <div className="flex  items-center justify-center rounded-full">
                         <Button
                           variant={"outline"}
-                          className=" dark:bg-white dark:text-black  text-white bg-black"
+                          className=" dark:text-black bg-gray-600 dark:bg-secondary  text-white "
                         >
                           Hire for work
                         </Button>
@@ -92,7 +93,9 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            <span className="hidden lg:flex"><ToggleTheme  /></span>
+            <span className="hidden lg:flex">
+              <ToggleTheme />
+            </span>
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
@@ -117,7 +120,6 @@ const Header = () => {
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           exit={{ opacity: 0 }}
-                          
                         />
 
                         <Popover.Panel
@@ -139,6 +141,14 @@ const Header = () => {
                             <MobileNavLink href="#reviews">
                               Tech Stack
                             </MobileNavLink>
+                            <div className="flex  items-center justify-center rounded-full">
+                              <Button
+                                variant={"outline"}
+                                className="dark:text-black bg-gray-600 dark:bg-secondary  text-white"
+                              >
+                                Hire for work
+                              </Button>
+                            </div>
                           </div>
                         </Popover.Panel>
                       </>

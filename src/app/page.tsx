@@ -33,7 +33,7 @@ export default function Home() {
             <p className="text-center text-base lg:text-lg mb-4 max-w-2xl tracking-widest uppercase font-semibold ">
               Nandani Paliwal
             </p>
-            <h1 className=" text-7xl -space-y-3 sm:-space-y-4 sm:text-8xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold ">
+            <h1 className=" text-5xl -space-y-2 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold ">
               <span className="block">National</span>
               <span className="block">level</span>
               <span className="block">Chess</span>
@@ -52,8 +52,8 @@ export default function Home() {
             <p className="text-left mb-4 tracking-widest uppercase text-lg font-semibold">
               About Me
             </p>
-            <h2 className=" text-5xl sm:text-6xl lg:text-7xl max-w-5xl font-bold ">
-              I &rsquo m a National level Chess player and is good in playing white and
+            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold ">
+              I&rsquo;m a National level Chess player and is good in playing white and
               knows how to move her queen.
             </h2>
           </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <p className="text-center text-base lg:text-lg mb-4 max-w-2xl tracking-widest uppercase font-semibold text-gray-600 dark:text-secondary ">
               Nandani Paliwal
             </p>
-            <h1 className="  text-7xl -space-y-3 sm:-space-y-4 sm:text-8xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold text-gray-600 dark:text-secondary ">
+            <h1 className="  text-5xl -space-y-2 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold text-gray-600 dark:text-secondary ">
               <span className="block">Pixel</span>
               <span className="block">Perfect</span>
               <span className="block text-primary-500">Frontend</span>
@@ -76,8 +76,8 @@ export default function Home() {
             <p className="text-left text-base lg:text-lg mb-4 tracking-widest uppercase font-semibold text-gray-600 dark:text-secondary">
               About Me
             </p>
-            <h2 className=" text-5xl sm:text-6xl lg:text-7xl max-w-5xl font-bold text-gray-600 dark:text-secondary">
-              I &rsquo m Frontend Developer who is leaning to create some awesome
+            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold text-gray-600 dark:text-secondary">
+              I&rsquo;m Frontend Developer who is leaning to create some awesome
               animations on the canvas.
             </h2>
           </div>
