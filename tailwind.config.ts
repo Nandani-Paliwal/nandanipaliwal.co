@@ -31,6 +31,7 @@ const config: Config = {
           900: "#401103",
           950: "#220901",
         },
+        secondary: '#B7AB98',
       },
     },
   },
