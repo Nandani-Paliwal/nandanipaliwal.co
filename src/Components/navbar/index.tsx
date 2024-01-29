@@ -144,7 +144,6 @@ const Header = () => {
                             <div className="flex  items-center justify-center rounded-full">
                               <Button
                                 variant={"outline"}
-                                className="dark:text-black bg-gray-600 dark:bg-secondary  text-white"
                               >
                                 Hire for work
                               </Button>
