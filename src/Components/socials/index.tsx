@@ -87,8 +87,8 @@ export default function Socials() {
     <section className="fixed bottom-6 left-10">
       <div className="space-y-5 flex flex-col justify-center items-center">
         {" "}
-        {socialList.map((social) => (
-          <Link href={social.href} target="blank">
+        {socialList.map((social, index) => (
+          <Link href={social.href} target="blank" key={index}>
             <FramerMagnetic>
               <social.icon aria-hidden="true" />
             </FramerMagnetic>

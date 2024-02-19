@@ -28,13 +28,5 @@ export default function useMousePosition() {
     };
   }, []);
  
-  return (
-    <motion.div
-      animate={{ x: mousePosition.x, y: mousePosition.y}}
-      transition={{ type: "spring", stiffness: 350, damping: 5, mass: 0.5 }}
-      className="mask"
-    ></motion.div>
-  );
+  return mousePosition;
 }
-
-pn
