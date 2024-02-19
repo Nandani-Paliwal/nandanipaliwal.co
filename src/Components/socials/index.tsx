@@ -1,9 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import { useTheme } from "next-themes";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import useMousePosition from "../../utils/use-mouse-position";
 import FramerMagnetic from "../../utils/framer-magnetic";
 import React, { type SVGAttributes } from "react";
 
@@ -18,7 +13,7 @@ const socialList = [
         strokeWidth="0"
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-12 w-12 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
+        className="h-10 w-10 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
       >
@@ -36,7 +31,7 @@ const socialList = [
         strokeWidth="0"
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-12 w-12 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
+        className="h-10 w-10 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
       >
@@ -54,7 +49,7 @@ const socialList = [
         strokeWidth="0"
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-12 w-12 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
+        className="h-10 w-10 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
       >
@@ -72,7 +67,7 @@ const socialList = [
         strokeWidth="0"
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className="h-12 w-12 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
+        className="h-10 w-10 text-gray-600 dark:text-secondary-400 hover:text-black dark:hover:text-black"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
       >

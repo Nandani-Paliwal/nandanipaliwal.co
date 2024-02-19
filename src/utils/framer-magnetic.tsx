@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { motion, useMotionValue, useSpring, transform, animate } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import React, { ReactNode } from "react";
 
 interface FramerMagenticProps {
@@ -8,7 +8,7 @@ interface FramerMagenticProps {
 }
 
 const FramerMagentic: React.FC<FramerMagenticProps> = ({ children }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState<{ x: number; y: number }>({
     x: 0,
     y: 0,
@@ -22,9 +22,9 @@ const FramerMagentic: React.FC<FramerMagenticProps> = ({ children }) => {
     y: useMotionValue(1)
   }
 
-  const mouseMove = (e: MouseEvent) => {
+  const mouseMove = (e:  React.MouseEvent) => {
     const { clientX, clientY } = e;
-    const { width, height, left, top } = ref.current.getBoundingClientRect();
+    const { width, height, left, top } = ref.current!.getBoundingClientRect();
     const x = clientX - (left + width / 2);
     const y = clientY - (top + height / 2);
     setPosition({ x, y });
@@ -38,7 +38,6 @@ const FramerMagentic: React.FC<FramerMagenticProps> = ({ children }) => {
   const { x, y } = position;
   return (
     <motion.div
-      // style={{ position: "relative" }}
       onMouseMove={mouseMove}
       onMouseLeave={mouseLeave}
       ref={ref}
