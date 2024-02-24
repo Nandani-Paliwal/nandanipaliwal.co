@@ -53,12 +53,12 @@ export default function Home() {
             }}
             className=" flex flex-col mt-48"
           >
-            <p className="text-left mb-4 tracking-widest uppercase text-lg font-semibold">
+            <p className="text-left mb-4 tracking-[0.5em] uppercase text-lg font-semibold">
               About Me
             </p>
-            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold ">
-              I&rsquo;m a National level Chess player and is good in playing
-              white and knows how to move her queen.
+            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold dark:text-black text-white">
+              National level Chess player who can move her queen and is good while playing with white.
+
             </h2>
           </div>
         </motion.div>
@@ -81,7 +81,7 @@ export default function Home() {
           {/* about section */}
           <div className="flex flex-col mt-48">
             {" "}
-            <p className="text-left text-base lg:text-lg mb-4 tracking-widest uppercase font-semibold text-gray-600 dark:text-secondary-400">
+            <p className="text-left text-base lg:text-lg mb-4 tracking-[0.5em] uppercase font-semibold text-gray-600 dark:text-secondary-400">
               About Me
             </p>
             <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold text-gray-600 dark:text-secondary-400">
