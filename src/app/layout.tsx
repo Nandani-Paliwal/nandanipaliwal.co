@@ -5,6 +5,7 @@ import Footer from "../Components/footer";
 import Header from "../Components/navbar";
 
 import { Poppins } from "next/font/google";
+import CustomCursor from "../utils/use-mouse-position";
 
 const poppins = Poppins({
   weight: "400",
@@ -26,9 +27,9 @@ export default function RootLayout({
     <html lang="en" className="light" style={{ colorScheme: "light" }}>
       <body className={poppins.className}>
         <Providers>
+          {/* <CustomCursor /> */}
           <Header />
           {children}
-          <Footer />
         </Providers>
       </body>
     </html>

@@ -16,6 +16,28 @@
   }
 } */
 
+.mask{
+  position: absolute;
+  mask-image: url(../../public/mask.svg);
+  /* mask-position: center; */
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+ background-color: #F87C56;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gradient-wrapper_primaryscaleBorder {
   -webkit-animation: spinGradient 5s linear infinite;
   animation: spinGradient 5s linear infinite;

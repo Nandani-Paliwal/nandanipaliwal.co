@@ -60,7 +60,7 @@ const buttonClassVariants = cva(
 				variant: 'outline',
 				className:
 					// 'bg-transparent hover:bg-primary-50 border-primary-500 text-primary-600 hover:text-primary-700 dark:text-accent-500 dark:border-accent-600 dark:hover:bg-accent-900 dark:hover:text-accent-400
-					'dark:bg-white dark:text-black  text-white bg-black'
+					'dark:bg-secondary-400 dark:text-black  text-white bg-gray-600'
 					
 			},
 			{
