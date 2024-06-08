@@ -1,6 +1,6 @@
 import { type FC, type ButtonHTMLAttributes } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { clsx } from 'clsx';
+import { clsx } from 'clsx'
 
 const buttonClassVariants = cva(
 	'inline-flex min-w-max items-center gap-2 flex-shrink-0 dark:ring-offset-gray-900 border border-transparent font-semibold focus:outline-none disabled:shadow-none disabled:cursor-not-allowed disabled:opacity-50',
@@ -61,7 +61,6 @@ const buttonClassVariants = cva(
 				className:
 					// 'bg-transparent hover:bg-primary-50 border-primary-500 text-primary-600 hover:text-primary-700 dark:text-accent-500 dark:border-accent-600 dark:hover:bg-accent-900 dark:hover:text-accent-400
 					'dark:bg-secondary-400 dark:text-black  text-white bg-gray-600'
-					
 			},
 			{
 				intent: 'secondary',

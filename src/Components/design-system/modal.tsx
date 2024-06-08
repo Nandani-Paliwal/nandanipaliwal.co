@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { type VariantProps, cva } from 'class-variance-authority'
 import React, { Fragment, type HTMLAttributes } from 'react'
-import { clsx } from 'clsx';
+import { clsx } from 'clsx'
 
 const customModalClassVariants = cva('relative z-10', {
 	variants: {
