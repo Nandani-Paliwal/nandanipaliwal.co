@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Providers from "../Components/providers";
-import Footer from "../Components/footer";
-import Header from "../Components/navbar";
-
 import { Poppins } from "next/font/google";
-import CustomCursor from "../utils/use-mouse-position";
+import StandardLayout from "../Components/layouts/standard-layout";
 
 const poppins = Poppins({
   weight: "400",
@@ -26,11 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="light" style={{ colorScheme: "light" }}>
       <body className={poppins.className}>
-        <Providers>
-          {/* <CustomCursor /> */}
-          <Header />
-          {children}
-        </Providers>
+        
+        <StandardLayout>{children}</StandardLayout>
       </body>
     </html>
   );
