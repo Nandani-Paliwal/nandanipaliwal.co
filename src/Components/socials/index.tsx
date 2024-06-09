@@ -79,17 +79,31 @@ const socialList = [
 
 export default function Socials() {
 	return (
-		<section className="fixed bottom-6 left-10">
-			<div className="flex flex-col items-center justify-center space-y-5">
-				{' '}
-				{socialList.map((social, index) => (
-					<Link href={social.href} target="blank" key={index}>
-						<FramerMagnetic>
-							<social.icon aria-hidden="true" />
-						</FramerMagnetic>
-					</Link>
-				))}
-			</div>
-		</section>
+		<>
+			<section className="fixed bottom-6 left-10 hidden md:block">
+				<div className="flex flex-col items-center justify-center space-y-5">
+					{' '}
+					{socialList.map((social, index) => (
+						<Link href={social.href} target="blank" key={index}>
+							<FramerMagnetic>
+								<social.icon aria-hidden="true" />
+							</FramerMagnetic>
+						</Link>
+					))}
+				</div>
+			</section>
+			{/* <section className="flex md:hidden">
+				<div className="flex items-center justify-between space-x-5">
+					{' '}
+					{socialList.map((social, index) => (
+						<Link href={social.href} target="blank" key={index}>
+							<FramerMagnetic>
+								<social.icon aria-hidden="true" />
+							</FramerMagnetic>
+						</Link>
+					))}
+				</div>
+			</section> */}
+		</>
 	)
 }

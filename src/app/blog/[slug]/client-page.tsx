@@ -158,8 +158,8 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 			/>
 
 			<div className="realtive mt-10 flex-1 py-20 xl:mr-[17rem]">
-				<Container className="flex flex-1 flex-row gap-6 py-5 dark:border-zinc-700">
-					<article className="overflow-y-autopx-6 flex w-full flex-col items-start gap-10 py-10 pb-10">
+				<Container className="flex flex-1 flex-row gap-6 dark:border-zinc-700 md:py-5">
+					<article className="overflow-y-autopx-6 flex w-full flex-col items-start gap-10 pb-10 md:py-10">
 						<div className="blog-article-page container relative mx-auto grid w-full grid-cols-8 px-4 py-5 ">
 							<div className="absolute left-0 top-10 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 "></div>
 							<div className=" col-span-full mx-auto flex w-full flex-col gap-8 border-x border-dashed border-zinc-400 py-5 dark:border-zinc-700">
@@ -236,7 +236,7 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 									></div>
 								</div>
 							</div>
-							<div className="absolute left-0 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 md:bottom-0 "></div>
+							<div className="absolute bottom-0 left-0 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 md:bottom-0 "></div>
 						</div>
 					</article>
 				</Container>

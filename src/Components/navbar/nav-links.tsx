@@ -5,13 +5,15 @@ import { AnimatePresence, motion } from 'framer-motion'
 const NavLinks = () => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
-	return [
-		['Blogs', '/blog'],
-		['Tech Stack', '/tech-stack']
-	].map(([label, href], index) => (
+	const navigation = [
+		{ label: 'Blogs', href: '/blog' },
+		{ label: 'Tech Stack', href: '/tech-stack' }
+	]
+
+	return navigation.map((item, index) => (
 		<Link
-			key={label}
-			href={href}
+			key={item.label}
+			href={item.href}
 			className="relative -mx-3 -my-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition-colors delay-150 hover:text-slate-500 hover:delay-[0ms] dark:text-secondary-400  dark:hover:text-secondary-500"
 			onMouseEnter={() => setHoveredIndex(index)}
 			onMouseLeave={() => setHoveredIndex(null)}
@@ -30,7 +32,7 @@ const NavLinks = () => {
 					/>
 				)}
 			</AnimatePresence>
-			<span className="relative z-10">{label}</span>
+			<span className="relative z-10">{item.label}</span>
 		</Link>
 	))
 }

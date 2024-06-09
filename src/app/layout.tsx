@@ -76,8 +76,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" className="light" style={{ colorScheme: 'light' }}>
-			<body className={poppins.className}>
+		<html lang="en" className="light min-h-screen" style={{ colorScheme: 'light' }}>
+			<body className={`min-h-screen ${poppins.className}`}>
 				<StandardLayout>{children}</StandardLayout>
 			</body>
 		</html>

@@ -11,14 +11,14 @@ export default function Home() {
 
 	return (
 		<main className="">
-			<div className="relative  mx-11 flex h-full flex-col items-center justify-center py-32 lg:mx-auto">
+			<div className="relative  flex h-full flex-col items-center justify-center py-32 md:mx-11 lg:mx-auto">
 				<motion.div
 					animate={{
 						WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
 						WebkitMaskSize: `${size}px`
 					}}
 					transition={{ type: 'tween', ease: 'backOut' }}
-					className="mask absolute flex h-full w-full flex-col items-center justify-center py-40 text-black"
+					className="mask absolute flex h-full min-h-screen w-full flex-col items-center justify-center py-40 text-black md:px-14 lg:px-24"
 				>
 					{/* hero section */}
 					<div
@@ -49,12 +49,12 @@ export default function Home() {
 						onMouseLeave={() => {
 							setIsHovered(false)
 						}}
-						className=" mt-48 flex flex-col"
+						className="mt-48 flex flex-col px-4 md:px-0"
 					>
 						<p className="mb-4 text-left text-lg font-semibold uppercase tracking-[0.5em]">
 							About Me
 						</p>
-						<h2 className=" max-w-5xl text-4xl font-bold text-white dark:text-black sm:text-5xl lg:text-7xl">
+						<h2 className=" max-w-5xl text-4xl font-bold text-black sm:text-5xl lg:text-7xl">
 							National level Chess player who can move her queen and is good while
 							playing with white.
 						</h2>
@@ -62,7 +62,7 @@ export default function Home() {
 				</motion.div>
 
 				{/* actual content */}
-				<div className="actual-content mx-11 flex h-full w-full flex-col items-center justify-center py-40 lg:mx-auto">
+				<div className="actual-content flex h-full w-full flex-col items-center justify-center py-40 md:mx-11 md:px-14 lg:px-24">
 					{/* hero section */}
 					<div className="flex flex-col items-center justify-center">
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest text-gray-600 dark:text-secondary-400 lg:text-lg ">
@@ -77,7 +77,7 @@ export default function Home() {
 					</div>
 
 					{/* about section */}
-					<div className="mt-48 flex flex-col">
+					<div className="mt-48 flex flex-col px-4 md:px-0">
 						{' '}
 						<p className="mb-4 text-left text-base font-semibold uppercase tracking-[0.5em] text-gray-600 dark:text-secondary-400 lg:text-lg">
 							About Me
@@ -87,10 +87,9 @@ export default function Home() {
 							animations on the canvas.
 						</h2>
 					</div>
-
-					{/* socials section */}
-					<Socials />
 				</div>
+				{/* socials section */}
+				<Socials />
 			</div>
 		</main>
 	)

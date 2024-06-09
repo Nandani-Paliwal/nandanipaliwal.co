@@ -129,7 +129,7 @@ const Header = () => {
 													className="absolute inset-x-0 top-20 z-0 origin-top rounded-2xl border border-dark bg-white px-6 py-6 shadow-2xl shadow-gray-900/20 dark:bg-secondarydark"
 												>
 													<div className="flex flex-col items-center justify-center space-y-2">
-														<MobileNavLink href="#features">
+														<MobileNavLink href="/blog">
 															Blogs
 														</MobileNavLink>
 														<MobileNavLink href="#reviews">
