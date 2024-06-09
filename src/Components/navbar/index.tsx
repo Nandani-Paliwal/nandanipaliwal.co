@@ -40,7 +40,6 @@ function MobileNavLink({ children, ...props }: any) {
 			as={Link}
 			className="block text-base leading-7 tracking-tight text-slate-700 transition-colors delay-150 hover:text-slate-500  hover:delay-[0ms] dark:text-slate-300  dark:hover:text-slate-500 "
 			{...props}
-			href={''}
 		>
 			{children}
 		</Popover.Button>
