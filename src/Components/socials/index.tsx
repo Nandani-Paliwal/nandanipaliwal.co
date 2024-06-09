@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import FramerMagnetic from '../../utils/framer-magnetic'
+import FramerMagnetic from '~/Components/ui/framer-magnetic'
 import React, { type SVGAttributes } from 'react'
 
 const socialList = [

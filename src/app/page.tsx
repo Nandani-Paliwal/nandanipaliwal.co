@@ -1,5 +1,5 @@
 'use client'
-import useMousePosition from '../utils/use-mouse-position'
+import useMousePosition from '~/Components/ui/use-mouse-position'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Socials from '../Components/socials'

@@ -1,0 +1,157 @@
+query SinglePostByPublication($slug: String!, $host: String!) {
+	publication(host: $host) {
+		...Publication
+		posts(first: 5) {
+			edges {
+				node {
+					id
+					slug
+					title
+					subtitle
+					tags {
+						id
+						name
+						slug
+					}
+					coverImage {
+						url
+					}
+					seo {
+						title
+						description
+					}
+				}
+			}
+			totalDocuments
+		}
+		post(slug: $slug) {
+			...PostFull
+		}
+	}
+}
+
+fragment PostFull on Post {
+	publication {
+		id
+		domainInfo {
+			hashnodeSubdomain
+			domain {
+				host
+				ready
+			}
+		}
+		urlPattern
+		features {
+			newsletter {
+				isEnabled
+			}
+			readTime {
+				isEnabled
+			}
+			textSelectionSharer {
+				isEnabled
+			}
+		}
+	}
+	id
+	cuid
+	replyCount
+	slug
+	series {
+		id
+	}
+	url
+	brief
+	title
+	hasLatexInPost
+	subtitle
+	publishedAt
+	updatedAt
+	readTimeInMinutes
+	reactionCount
+	responseCount
+	seo {
+		title
+		description
+	}
+	coverImage {
+		url
+		isPortrait
+	}
+	author {
+		id
+		name
+		username
+		profilePicture
+		socialMediaLinks {
+			twitter
+		}
+	}
+	title
+	content {
+		markdown
+		html
+	}
+	ogMetaData {
+		image
+	}
+	tags {
+		id
+		name
+		slug
+	}
+	features {
+		tableOfContents {
+			isEnabled
+			items {
+				id
+				level
+				parentId
+				slug
+				title
+			}
+		}
+	}
+	preferences {
+		disableComments
+		stickCoverToBottom
+	}
+	comments(first: 25) {
+		totalDocuments
+		edges {
+			node {
+				id
+				dateAdded
+				totalReactions
+				replies(first: 10) {
+					edges {
+						node {
+							id
+							dateAdded
+							author {
+								name
+								id
+								username
+								profilePicture
+							}
+							content {
+								markdown
+								html
+							}
+						}
+					}
+				}
+				content {
+					markdown
+					html
+				}
+				author {
+					name
+					id
+					username
+					profilePicture
+				}
+			}
+		}
+	}
+}

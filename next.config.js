@@ -3,7 +3,7 @@ const ADVANCED_ANALYTICS_BASE_URL = 'https://stats.hashnode.com'
 
 const blogRewriteHostname =
 	process.env.NODE_ENV === 'production'
-		? 'https://blog-sarthakjdev-com.vercel.app'
+		? 'https://blog-nandanipaliwal-co.vercel.app'
 		: 'http://localhost:3000'
 
 /** @type {import('next').NextConfig} */

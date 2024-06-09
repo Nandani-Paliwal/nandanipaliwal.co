@@ -13,14 +13,28 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "@urql/core": "^4.2.2",
+		"@urql/exchange-graphcache": "^6.4.0",
+		"@urql/next": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
     "framer-motion": "^10.16.9",
+    "graphql-request": "^6.1.0",
     "locomotive-scroll": "5.0.0-beta.13",
     "next": "14.0.1",
     "next-themes": "^0.2.1",
+    "next-urql": "^5.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.4.5",
+    "postcss": "8.4.38",
+    "autoprefixer": "10.4.19",
+    "urql": "^4.0.6",
+    "immer": "^10.0.3",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
@@ -57,10 +71,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.10",
-    "tailwindcss": "3.4.4",
-    "typescript": "5.4.5",
-    "postcss": "8.4.38",
-    "autoprefixer": "10.4.19"
+    "prettier-plugin-tailwindcss": "^0.5.10"
+   
   }
 }

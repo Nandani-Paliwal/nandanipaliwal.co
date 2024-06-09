@@ -1,5 +1,16 @@
 import { type BlogPostType } from './types'
 
+import {
+	CANONICAL_SITE_DOMAIN,
+	DEFAULT_LIGHT_POST_COVER
+	// IS_PRODUCTION,
+	// ValidPhoneNumberRegex,
+	// hashnodeEnv,
+	// isBrowser,
+	// validEmailRegex,
+	// validUsernameRegex,
+} from './constant'
+
 export const getBlogs = async (count: number) => {
 	const query = {
 		query: `query { publication(host: "sarthakjdev.hashnode.dev"){  posts(first: ${count}){edges{node {
@@ -54,4 +65,37 @@ export const getBlogs = async (count: number) => {
 			publishedAt: post.publishedAt
 		}
 	}) as BlogPostType[]
+}
+
+export const addPublicationJsonLd = (publication: any) => {
+	const schema = {
+		'@context': 'https://schema.org/',
+		'@type': 'Blog',
+		'@id': `${CANONICAL_SITE_DOMAIN}/blog/`,
+		mainEntityOfPage: `${CANONICAL_SITE_DOMAIN}/blog/`,
+		name: publication.title,
+		description: publication.descriptionSEO,
+		publisher: {
+			'@type': 'Organization',
+			'@id': `${CANONICAL_SITE_DOMAIN}/blog/`,
+			name: publication.title,
+			image: {
+				'@type': 'ImageObject',
+				url: publication.preferences?.logo
+			}
+		}
+	}
+	return schema
+}
+
+export const getDefaultPostCoverImageUrl = () => {
+	return DEFAULT_LIGHT_POST_COVER
+}
+
+export function getPostUrl(slug: string) {
+	return `/blog/${slug}`
+}
+
+export function getAbsolutePostUrl(slug: string) {
+	return `${CANONICAL_SITE_DOMAIN}/blog/${slug}`
 }
