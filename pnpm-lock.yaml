@@ -70,9 +70,6 @@ devDependencies:
   '@types/lodash':
     specifier: ^4.17.1
     version: 4.17.5
-  '@types/marked':
-    specifier: ^6.0.0
-    version: 6.0.0
   '@types/ms':
     specifier: ^0.7.34
     version: 0.7.34
@@ -1881,13 +1878,6 @@ packages:
 
   /@types/lodash@4.17.5:
     resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
-    dev: true
-
-  /@types/marked@6.0.0:
-    resolution: {integrity: sha512-jmjpa4BwUsmhxcfsgUit/7A9KbrC48Q0q8KvnY107ogcjGgTFDlIL3RpihNpx2Mu1hM4mdFQjoVc4O6JoGKHsA==}
-    deprecated: This is a stub types definition. marked provides its own type definitions, so you do not need this installed.
-    dependencies:
-      marked: 12.0.2
     dev: true
 
   /@types/minimist@1.2.5:
@@ -4888,12 +4878,6 @@ packages:
   /map-obj@4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
-    dev: true
-
-  /marked@12.0.2:
-    resolution: {integrity: sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==}
-    engines: {node: '>= 18'}
-    hasBin: true
     dev: true
 
   /meow@12.1.1:
