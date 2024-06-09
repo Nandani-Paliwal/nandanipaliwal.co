@@ -148,7 +148,7 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 	}, [tocToRender])
 
 	return (
-		<section className="relative z-10 mx-auto flex max-w-7xl px-4 py-10 ">
+		<section className="relative z-10 mx-auto flex max-w-7xl px-4 pt-10 ">
 			<Script
 				id="jsonld-article"
 				type="application/ld+json"
@@ -157,7 +157,7 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 				}}
 			/>
 
-			<div className="realtive mt-10 flex-1 py-20 xl:mr-[17rem]">
+			<div className="realtive mt-10 flex-1 pt-20 xl:mr-[17rem]">
 				<Container className="flex flex-1 flex-row gap-6 dark:border-zinc-700 md:py-5">
 					<article className="overflow-y-autopx-6 flex w-full flex-col items-start gap-10 pb-10 md:py-10">
 						<div className="blog-article-page container relative mx-auto grid w-full grid-cols-8 px-4 py-5 ">

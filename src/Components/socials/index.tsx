@@ -92,7 +92,7 @@ export default function Socials() {
 					))}
 				</div>
 			</section>
-			{/* <section className="flex md:hidden">
+			<section className="flex md:hidden">
 				<div className="flex items-center justify-between space-x-5">
 					{' '}
 					{socialList.map((social, index) => (
@@ -103,7 +103,7 @@ export default function Socials() {
 						</Link>
 					))}
 				</div>
-			</section> */}
+			</section>
 		</>
 	)
 }

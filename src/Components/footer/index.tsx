@@ -79,7 +79,7 @@ const socialList = [
 
 export default function Footer() {
 	return (
-		<section className="mx-auto flex md:hidden">
+		<section className="mx-auto flex py-4">
 			<div className="flex items-center justify-between space-x-5">
 				{' '}
 				{socialList.map((social, index) => (

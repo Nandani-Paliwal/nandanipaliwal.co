@@ -26,7 +26,9 @@ const StandardLayout: React.FC<
 						<LocomotiveScroll />
 						<Header />
 						{children}
-						<Footer />
+						<div className="md:hidden">
+							<Footer />
+						</div>
 					</Providers>
 				</div>
 			</div>

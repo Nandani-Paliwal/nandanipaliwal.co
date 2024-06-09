@@ -8,7 +8,6 @@ import {
 	MetaTitle,
 	ProductDescription
 } from '~/constant'
-
 export const generateMetadata = async (): Promise<Metadata> => {
 	const data = await getBlogHomePageData()
 
