@@ -12,10 +12,6 @@ import { getBlurHash, imageReplacer, resizeImage } from '~/utils/blog/image-util
 import { useEffect, useMemo, useState } from 'react'
 import { useBlogStore } from '~/store/blog-store'
 import Script from 'next/script'
-import Button from '~/Components/design-system/button'
-import { PlayerTriggerStateEnum } from '~/types'
-import colors from 'tailwindcss/colors'
-import dynamic from 'next/dynamic'
 
 type Props = {
 	post: PostFullFragment | null
@@ -96,10 +92,6 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 	if (!post) {
 		throw new Error('No post found!')
 	}
-
-	const AnimatedIconPlayer = dynamic(() => import('~/Components/lord-icon'), {
-		ssr: false
-	})
 
 	const tableOfContent = post?.features?.tableOfContents?.isEnabled
 		? post.features?.tableOfContents?.items.flat()
