@@ -42,3 +42,387 @@
 		opacity: 1;
 	}
 }
+
+
+
+/* Tooltip end */
+
+.hn-table {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.prose .hn-table table {
+	border: 1px solid #e0e0e0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prose .hn-table table tbody td:first-child,
+.prose table tbody td:first-child {
+	padding-left: 0.5rem;
+}
+
+.prose table td > p {
+	margin: 0;
+	padding: 0;
+}
+
+.prose .hn-table table td {
+	min-width: 200px;
+	padding: 0.5rem;
+}
+
+.prose .hn-table table td,
+.prose .hn-table table th {
+	padding: 0.5rem !important;
+}
+
+.container {
+	width: 100%;
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.feed-width {
+		min-width: 850px;
+		max-width: 1000px;
+	}
+
+	.container-wrapper {
+		max-width: 1232px;
+	}
+}
+
+.prose code {
+	border-radius: 0.25rem;
+	font-weight: 400 !important;
+	padding: 0.25rem;
+	--tw-text-opacity: 1;
+	color: rgba(0, 0, 0, var(--tw-text-opacity));
+	font-size: 80%;
+	background: #f0efed;
+}
+
+.dark .prose code {
+	--tw-bg-opacity: 1;
+	background-color: rgba(36, 41, 46, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(238, 238, 238, var(--tw-text-opacity));
+}
+
+.prose pre {
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+
+.prose pre code {
+	background-color: transparent;
+	border-radius: 0px;
+	font-weight: 500 !important;
+	padding: 0px;
+	font-size: 100%;
+	color: #fafafa;
+}
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+	content: none;
+}
+
+.dark .prose pre code {
+	background-color: transparent;
+	color: #ddd;
+}
+
+.prose .embed-wrapper {
+	max-width: 100%;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+}
+
+.prose .embed-wrapper iframe {
+	max-width: 100% !important;
+}
+
+li p {
+	margin: 0px !important;
+}
+
+a.user-mention {
+	color: #2962ff !important;
+	--tw-border-opacity: 1;
+	border-color: rgba(158, 158, 158, var(--tw-border-opacity));
+	/* border-style: dashed; */
+	border-bottom-width: 2px;
+	display: inline;
+	font-weight: 500;
+	line-height: 1.375;
+	text-decoration: none !important;
+}
+
+img.image--center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.image--right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+/* Permalink styles start */
+
+.permalink-heading {
+	position: relative;
+}
+
+.permalink-heading > .permalink-heading-button {
+	position: absolute;
+	right: 100%;
+	padding: 5px;
+	padding-right: 10px;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.permalink-heading:hover > .permalink-heading-button {
+	visibility: visible;
+}
+
+/* Permalink styles end */
+
+/* Start: Embed center alignment */
+.embed-card,
+.embed-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.webembed-wrapper,
+.embed-wrapper > div {
+	width: 100%;
+}
+.embed-loading {
+	display: none;
+}
+/* End: Embed center alignment */
+
+@layer components {
+	.focus-ring-base {
+		@apply ring-offset-2 focus:outline-none focus:ring;
+	}
+	/* .focus-ring-colors-dark-header {
+	  @apply ring-white/80 ring-offset-custom-header;
+	} */
+	/* .focus-ring-colors-light-header {
+	  @apply ring-slate-950/80 ring-offset-custom-header;
+	} */
+	.focus-ring-colors-base {
+		@apply ring-blue-600 ring-offset-white dark:ring-offset-slate-800;
+	}
+}
+
+/* highlightJsMonokaiTheme CSS */
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #23241f;
+}
+.hljs,
+.hljs-subst,
+.hljs-tag {
+	color: #f8f8f2;
+}
+.hljs-emphasis,
+.hljs-strong {
+	color: #a8a8a2;
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-quote,
+.hljs-regexp {
+	color: #ae81ff;
+}
+.hljs-code,
+.hljs-section,
+.hljs-selector-class,
+.hljs-title {
+	color: #a6e22e;
+}
+.hljs-strong {
+	font-weight: 700;
+}
+.hljs-emphasis {
+	font-style: italic;
+}
+.hljs-attr,
+.hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+	color: #f92672;
+}
+.hljs-attribute,
+.hljs-symbol {
+	color: #66d9ef;
+}
+.hljs-class .hljs-title,
+.hljs-params {
+	color: #f8f8f2;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-attr,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+	color: #e6db74;
+}
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+	color: #75715e;
+}
+
+/* ==== BLOG CSS END ==== */
+
+/* ===== CUSTOM SCROLLBAR CSS */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+	border: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #f16232;
+	border-radius: 2rem;
+}
+
+/* ===== CUSTOM SCROLLBAR CSS  END */
+
+/* === GRADIENT BORDER USED IN HERO SECTION (FREE TECH...) CSS*/
+.badge::before {
+	content: '';
+	position: absolute;
+	inset: -1px;
+	border-radius: inherit;
+	padding: 1px;
+	background-image: linear-gradient(
+		170deg,
+		rgba(0, 0, 0, 0.2) -6.28%,
+		rgba(0, 0, 0, 0.4) 9.84%,
+		#000 38.59%,
+		rgba(0, 0, 0, 0.4) 66.93%,
+		transparent 122.67%
+	);
+	mask:
+		linear-gradient(#000, #000) content-box,
+		linear-gradient(#000, #000);
+	mask-composite: exclude;
+}
+
+/* === GRADIENT BORDER CODE USED IN HERO SECTION (FREE TECH...)  CSS END*/
+/* 
+.mask {
+	position: absolute;
+	mask-image: url(../../public/assets/workflow/mask.svg);
+	mask-position: center;
+	mask-repeat: no-repeat;
+	mask-size: cover;
+	mask-size: 40px;
+	background-color: #F87C56;
+} */
+
+.clip {
+	clip-path: polygon(
+		74.1% 44.1%,
+		100% 61.6%,
+		97.5% 26.9%,
+		85.5% 0.1%,
+		80.7% 2%,
+		72.5% 32.5%,
+		60.2% 62.4%,
+		52.4% 68.1%,
+		47.5% 58.3%,
+		45.2% 34.5%,
+		27.5% 76.7%,
+		0.1% 64.9%,
+		17.9% 100%,
+		27.6% 76.8%,
+		76.1% 97.7%,
+		74.1% 44.1%
+	);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+/* Glassmorphism card effect */
+.card {
+	backdrop-filter: blur(1px) saturate(200%);
+	-webkit-backdrop-filter: blur(1px) saturate(200%);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.card-black {
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 8px 32px 0 rgba(169, 174, 230, 0.2);
+	backdrop-filter: blur(4.5px);
+	-webkit-backdrop-filter: blur(4.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}

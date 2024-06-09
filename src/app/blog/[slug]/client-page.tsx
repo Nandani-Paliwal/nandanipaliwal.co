@@ -260,20 +260,6 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 									></div>
 								</div>
 							</div>
-
-							<div className="col-span-full mx-auto flex  w-full flex-col items-center justify-center gap-8">
-								<Link href={'/contact'} title="launch-with-us">
-									<Button size={'large'}>
-										<AnimatedIconPlayer
-											iconSrc={'/assets/lord-icons/trending-up.json'}
-											trigger={PlayerTriggerStateEnum.Hover}
-											size={24}
-											color={colors.white}
-										/>
-										Launch with us
-									</Button>
-								</Link>
-							</div>
 						</div>
 					</article>
 

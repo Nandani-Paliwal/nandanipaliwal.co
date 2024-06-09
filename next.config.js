@@ -12,12 +12,19 @@ const nextConfig = {
 	images: {
 		remotePatterns: [
 			{
-				protocol: 'https',
 				hostname: 'images.unsplash.com'
 			},
 			{
-				protocol: 'https',
+				hostname: 'media.discordapp.net'
+			},
+			{
+				hostname: 'tailwindui.com'
+			},
+			{
 				hostname: 'cdn.hashnode.com'
+			},
+			{
+				hostname: 'cdn.lordicon.com'
 			}
 		]
 	},

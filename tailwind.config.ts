@@ -43,10 +43,10 @@ const config: Config = {
           800: '#635449',
           900: '#51453d',
           950: '#2b241f',
-      },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 };
 export default config;

@@ -2,8 +2,6 @@ import { notFound } from 'next/navigation'
 import BlogClientPage from './client-page'
 import { getBlogHomePageData } from './function'
 
-export const revalidate = 60 * 60 * 24 * 30
-
 const Blog = async () => {
 	const blogHomeData = await getBlogHomePageData()
 
