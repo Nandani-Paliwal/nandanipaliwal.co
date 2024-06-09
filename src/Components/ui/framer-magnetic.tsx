@@ -23,6 +23,7 @@ const FramerMagentic: React.FC<FramerMagenticProps> = ({ children }) => {
 
 	const mouseMove = (e: React.MouseEvent) => {
 		const { clientX, clientY } = e
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		const { width, height, left, top } = ref.current!.getBoundingClientRect()
 		const x = clientX - (left + width / 2)
 		const y = clientY - (top + height / 2)

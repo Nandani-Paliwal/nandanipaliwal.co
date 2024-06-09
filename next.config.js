@@ -8,6 +8,11 @@ const blogRewriteHostname =
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	env: {
+		NEXT_PUBLIC_HASHNODE_GQL_ENDPOINT: process.env.NEXT_PUBLIC_HASHNODE_GQL_ENDPOINT,
+		NEXT_PUBLIC_HASHNODE_PUBLICATION_HOST: process.env.NEXT_PUBLIC_HASHNODE_PUBLICATION_HOST,
+		NEXT_PUBLIC_MODE: process.env.NEXT_PUBLIC_MODE
+	},
 	reactStrictMode: true,
 	images: {
 		remotePatterns: [
