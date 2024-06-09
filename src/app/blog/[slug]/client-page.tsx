@@ -1,6 +1,6 @@
 'use client'
 
-import Container from '~/components/design-system/container'
+import { Container } from '~/Components/design-system/container'
 import { type PostFullFragment, type PublicationFragment } from 'root/generated/graphql'
 import { clsx } from 'clsx'
 import Image from 'next/image'
@@ -12,7 +12,7 @@ import { getBlurHash, imageReplacer, resizeImage } from '~/utils/blog/image-util
 import { useEffect, useMemo, useState } from 'react'
 import { useBlogStore } from '~/store/blog-store'
 import Script from 'next/script'
-import Button from '~/components/design-system/button'
+import Button from '~/Components/design-system/button'
 import { PlayerTriggerStateEnum } from '~/types'
 import colors from 'tailwindcss/colors'
 import dynamic from 'next/dynamic'
@@ -97,7 +97,7 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 		throw new Error('No post found!')
 	}
 
-	const AnimatedIconPlayer = dynamic(() => import('../../../components/lord-icon/index'), {
+	const AnimatedIconPlayer = dynamic(() => import('~/Components/lord-icon'), {
 		ssr: false
 	})
 

@@ -1,6 +1,6 @@
 import { Waypoint } from 'react-waypoint'
 import { clsx } from 'clsx'
-import Button from '~/components/design-system/button'
+import Button from '~/Components/design-system/button'
 import PubLoaderComponent from './pub-loader-component'
 import {
 	type PageInfo,

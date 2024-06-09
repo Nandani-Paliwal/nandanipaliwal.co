@@ -127,9 +127,9 @@ const BlogClientPage: React.FC<{
 			>
 				<h1 className="sr-only">
 					{' '}
-					Softlancer - We're on a mission to turn ideas into cutting-edge products,
-					fueling business growth. Transforming concepts into impactful products. Let's
-					innovate together!{' '}
+					Softlancer - We&apos;re on a mission to turn ideas into cutting-edge products,
+					fueling business growth. Transforming concepts into impactful products.
+					Let&apos;s innovate together!{' '}
 				</h1>
 				<CustomScrollArea>
 					<div className="blog-content-area feed-width mx-auto">

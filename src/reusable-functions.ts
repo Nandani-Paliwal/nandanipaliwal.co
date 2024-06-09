@@ -67,6 +67,52 @@ export const getBlogs = async (count: number) => {
 	}) as BlogPostType[]
 }
 
+export const addArticleJsonLd = (publication: any, post: any) => {
+	const tags = (post.tags ?? []).map((tag: any) => tag.name)
+	const schema = {
+		'@context': 'https://schema.org/',
+		'@type': 'Blog',
+		'@id': `${CANONICAL_SITE_DOMAIN}/blog/`,
+		mainEntityOfPage: `${CANONICAL_SITE_DOMAIN}/blog/`,
+		name: publication.title,
+		description: publication.about?.markdown,
+		publisher: {
+			'@type': 'Organization',
+			'@id': `${CANONICAL_SITE_DOMAIN}/`,
+			name: publication.title,
+			image: {
+				'@type': 'ImageObject',
+				url: publication.preferences?.logo || publication.preferences?.darkMode?.logo
+			}
+		},
+		blogPost: [
+			{
+				'@type': 'BlogPosting',
+				'@id': `${CANONICAL_SITE_DOMAIN}/blog/${post.slug}`,
+				mainEntityOfPage: `${CANONICAL_SITE_DOMAIN}/blog/${post.slug}`,
+				headline: post.title,
+				name: post.title,
+				description: post.seo?.description || post.brief,
+				datePublished: post.publishedAt,
+				dateModified: post.updatedAt,
+				author: {
+					'@type': 'Organization',
+					'@id': `https://linkedin.com/company/softlancer`,
+					name: post.author?.name,
+					url: `https://linkedin.com/company/softlancer`
+				},
+				image: {
+					'@type': 'ImageObject',
+					url: post.coverImage?.url
+				},
+				url: `${CANONICAL_SITE_DOMAIN}/blog/${post.slug}`,
+				keywords: tags
+			}
+		]
+	}
+	return schema
+}
+
 export const addPublicationJsonLd = (publication: any) => {
 	const schema = {
 		'@context': 'https://schema.org/',

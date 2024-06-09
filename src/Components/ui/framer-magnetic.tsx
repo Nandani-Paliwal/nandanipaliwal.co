@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useState } from 'react'
 import { motion, useMotionValue } from 'framer-motion'
-import React, { ReactNode } from 'react'
+import React, { type ReactNode } from 'react'
 
 interface FramerMagenticProps {
 	children: ReactNode
@@ -13,8 +13,8 @@ const FramerMagentic: React.FC<FramerMagenticProps> = ({ children }) => {
 		x: 0,
 		y: 0
 	})
-	const [isHovered, setIsHovered] = useState(false)
-	const cursorSize = isHovered ? 60 : 40
+	// const [isHovered, setIsHovered] = useState(false)
+	// const cursorSize = isHovered ? 60 : 40
 
 	const scale = {
 		x: useMotionValue(1),

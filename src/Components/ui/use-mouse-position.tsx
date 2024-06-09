@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { motion } from 'framer-motion'
+i
 
 export default function useMousePosition() {
 	const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({

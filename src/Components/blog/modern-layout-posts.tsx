@@ -1,5 +1,4 @@
 // import { Waypoint } from 'react-waypoint'
-import Image from 'next/image'
 import Button from '~/Components/design-system/button'
 import type {
 	PageInfo,
