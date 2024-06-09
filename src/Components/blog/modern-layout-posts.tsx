@@ -29,11 +29,10 @@ const PublicationPosts = (props: {
 	const slicedPosts = edges.map(edge => edge.node)
 
 	return (
-		<div className="blog-articles-area  mx-auto mt-10 px-4 py-20 dark:border-slate-800">
-			<div className="absolute left-0 top-4  -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 sm:top-6 md:top-[143px]"></div>
-			<div className="blog-articles-subarea border-x border-dashed border-zinc-400 py-5 dark:border-zinc-700">
-				<div className="relative flex flex-col gap-3">
-					{/* <div className="absolute left-0 top-0 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700"></div> */}
+		<div className="blog-articles-area relative mx-auto mt-10 px-4 py-20 dark:border-slate-800">
+			<div className="absolute left-0 top-24 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 "></div>
+			<div className="blog-articles-subarea h-full border-x border-dashed border-zinc-400 px-4 py-5 dark:border-zinc-700">
+				<div className="flex flex-col gap-3">
 					<h1 className="font-bold text-primary-500">Blogs</h1>
 					<div className="flex-col gap-3 md:flex">
 						<h2 className="max-w-3xl text-xl font-bold tracking-tighter md:text-5xl">
@@ -84,7 +83,7 @@ const PublicationPosts = (props: {
 						</>
 					)}
 					{pageInfo.hasNextPage && !fetching ? (
-						<div className="col-span-1 flex flex-row justify-center pt-10 md:col-span-2 lg:col-span-3">
+						<div className="col-span-1 flex flex-row justify-center px-4 pt-10 md:col-span-2 lg:col-span-3">
 							<Button
 								type="button"
 								variant="outline"

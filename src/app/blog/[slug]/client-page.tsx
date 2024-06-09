@@ -157,14 +157,15 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 				}}
 			/>
 
-			<div className="mt-10 flex-1 py-20 xl:mr-[17rem] ">
-				<Container className="relative flex flex-1 flex-row gap-6">
+			<div className="realtive mt-10 flex-1 py-20 xl:mr-[17rem]">
+				<Container className="flex flex-1 flex-row gap-6 py-5 dark:border-zinc-700">
 					<article className="overflow-y-autopx-6 flex w-full flex-col items-start gap-10 py-10 pb-10">
-						<div className="blog-article-page container relative mx-auto grid w-full grid-cols-8">
-							<div className="col-span-full mx-auto flex w-full flex-col gap-8">
+						<div className="blog-article-page container relative mx-auto grid w-full grid-cols-8 px-4 py-5 ">
+							<div className="absolute left-0 top-10 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 "></div>
+							<div className=" col-span-full mx-auto flex w-full flex-col gap-8 border-x border-dashed border-zinc-400 py-5 dark:border-zinc-700">
 								{/* Article title */}
 
-								<div className="flex flex-col gap-3 border-b-2 border-gray-200/50 md:px-5 lg:px-8 xl:px-10">
+								<div className="flex flex-col gap-3 md:px-5 lg:px-8 xl:px-10">
 									<Link
 										href={getAbsolutePostUrl(post.slug)}
 										className="tooltip-handle text-sm font-medium text-primary-500"
@@ -235,6 +236,7 @@ export default function BlogPostClientPage({ post, morePosts, publication }: Pro
 									></div>
 								</div>
 							</div>
+							<div className="absolute left-0 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 md:bottom-0 "></div>
 						</div>
 					</article>
 				</Container>
