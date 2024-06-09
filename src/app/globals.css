@@ -43,7 +43,104 @@
 	}
 }
 
+/* ==== BLOG CSS START ==== */
 
+@media (max-width: 800px) {
+	.article-width {
+		width: 100% !important;
+	}
+}
+
+/* Tooltip start */
+
+.tooltip-handle {
+	position: relative;
+}
+.tooltip-handle:after {
+	content: attr(data-title);
+	--tw-bg-opacity: 1;
+	background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+	border-radius: 0.25rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	margin-top: 0.5rem;
+	opacity: 0;
+	padding: 0.5rem;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+		var(--tw-shadow);
+	text-align: right;
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+	visibility: hidden;
+	white-space: nowrap;
+	z-index: 20;
+	transition-property:
+		background-color,
+		border-color,
+		color,
+		fill,
+		stroke,
+		opacity,
+		box-shadow,
+		transform,
+		filter,
+		-webkit-backdrop-filter;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow,
+		transform, filter, backdrop-filter;
+	transition-property:
+		background-color,
+		border-color,
+		color,
+		fill,
+		stroke,
+		opacity,
+		box-shadow,
+		transform,
+		filter,
+		backdrop-filter,
+		-webkit-backdrop-filter;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+.tooltip-handle.gold-tooltip:after {
+	background: linear-gradient(135.06deg, #fcc201 0.05%, #b78628 99.96%);
+}
+.tooltip-handle:hover::after {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 1000ms;
+}
+.tooltip-handle.tooltip-right::after {
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	right: auto;
+}
+.tooltip-handle.tooltip-left-aligned::after {
+	left: 0;
+	top: 100%;
+	right: auto;
+}
+.tooltip-handle.tooltip-right-aligned::after {
+	right: 0;
+	top: 100%;
+}
+.tooltip-handle.tooltip-left::after {
+	top: 0;
+	right: 100%;
+	left: auto;
+}
+@media (max-width: 1023px) {
+	.tooltip-handle:after {
+		display: none;
+	}
+}
 
 /* Tooltip end */
 
@@ -329,100 +426,3 @@ img.image--right {
 }
 
 /* ==== BLOG CSS END ==== */
-
-/* ===== CUSTOM SCROLLBAR CSS */
-::-webkit-scrollbar {
-	width: 5px;
-}
-
-::-webkit-scrollbar-track {
-	background: none;
-	border: none;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #f16232;
-	border-radius: 2rem;
-}
-
-/* ===== CUSTOM SCROLLBAR CSS  END */
-
-/* === GRADIENT BORDER USED IN HERO SECTION (FREE TECH...) CSS*/
-.badge::before {
-	content: '';
-	position: absolute;
-	inset: -1px;
-	border-radius: inherit;
-	padding: 1px;
-	background-image: linear-gradient(
-		170deg,
-		rgba(0, 0, 0, 0.2) -6.28%,
-		rgba(0, 0, 0, 0.4) 9.84%,
-		#000 38.59%,
-		rgba(0, 0, 0, 0.4) 66.93%,
-		transparent 122.67%
-	);
-	mask:
-		linear-gradient(#000, #000) content-box,
-		linear-gradient(#000, #000);
-	mask-composite: exclude;
-}
-
-/* === GRADIENT BORDER CODE USED IN HERO SECTION (FREE TECH...)  CSS END*/
-/* 
-.mask {
-	position: absolute;
-	mask-image: url(../../public/assets/workflow/mask.svg);
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: cover;
-	mask-size: 40px;
-	background-color: #F87C56;
-} */
-
-.clip {
-	clip-path: polygon(
-		74.1% 44.1%,
-		100% 61.6%,
-		97.5% 26.9%,
-		85.5% 0.1%,
-		80.7% 2%,
-		72.5% 32.5%,
-		60.2% 62.4%,
-		52.4% 68.1%,
-		47.5% 58.3%,
-		45.2% 34.5%,
-		27.5% 76.7%,
-		0.1% 64.9%,
-		17.9% 100%,
-		27.6% 76.8%,
-		76.1% 97.7%,
-		74.1% 44.1%
-	);
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.scrollbar-hidden::-webkit-scrollbar {
-	display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hidden {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-}
-
-/* Glassmorphism card effect */
-.card {
-	backdrop-filter: blur(1px) saturate(200%);
-	-webkit-backdrop-filter: blur(1px) saturate(200%);
-	background-color: rgba(255, 255, 255, 0.5);
-}
-.card-black {
-	background: rgba(0, 0, 0, 0.5);
-	box-shadow: 0 8px 32px 0 rgba(169, 174, 230, 0.2);
-	backdrop-filter: blur(4.5px);
-	-webkit-backdrop-filter: blur(4.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-}

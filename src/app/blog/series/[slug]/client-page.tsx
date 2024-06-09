@@ -100,7 +100,7 @@ const SeriesClientPage = ({
 								</h1>
 								{series.description?.html && (
 									<div
-										className="blog-series-desc prose prose-lg dark:prose-dark mb-5"
+										className="blog-series-desc dark:prose-dark prose prose-lg mb-5"
 										// eslint-disable-next-line react/no-danger
 										dangerouslySetInnerHTML={{
 											__html: series.description.html

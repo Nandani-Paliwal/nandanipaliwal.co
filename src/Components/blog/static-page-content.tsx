@@ -10,7 +10,7 @@ function StaticPageContent(props: Props) {
 	return (
 		<div className={`blog-page-card pb-32`}>
 			<div
-				className={`blog-page-content prose prose-lg xl:prose-xl dark:prose-dark mx-auto break-words tracking-tight`}
+				className={`blog-page-content dark:prose-dark prose prose-lg mx-auto break-words tracking-tight xl:prose-xl`}
 			>
 				<h1
 					className={`blog-page-title mb-10 break-words text-3xl font-bold text-secondary-900 dark:text-white md:text-4xl xl:text-5xl`}
