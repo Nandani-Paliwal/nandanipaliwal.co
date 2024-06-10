@@ -1,4 +1,4 @@
-# :sparkles: [nandanipaliwal.co](https://nandanipaliwal.co) :sparkles:
+<!-- # :sparkles: [nandanipaliwal.co](https://nandanipaliwal.co) :sparkles:
 
 
 
@@ -52,4 +52,4 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## :telephone_receiver: Contact
 
-Sarthak – [@nandanipaliwal](https://twitter.com/nandanipaliwal) - contact@nandanipaliwal.co
+Sarthak – [@nandanipaliwal](https://twitter.com/nandanipaliwal) - contact@nandanipaliwal.co -->
