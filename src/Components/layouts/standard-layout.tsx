@@ -5,7 +5,7 @@ import Providers from '../providers'
 
 import Header from '../navbar'
 import LocomotiveScroll from '../locomotive-scroll'
-// import Footer from '../footer'
+import Footer from '../footer'
 
 const StandardLayout: React.FC<
 	React.PropsWithChildren<{
@@ -26,7 +26,8 @@ const StandardLayout: React.FC<
 						<LocomotiveScroll />
 						<Header />
 						{children}
-						<div className="md:hidden">{/* <Footer /> */}</div>
+
+						<Footer />
 					</Providers>
 				</div>
 			</div>
