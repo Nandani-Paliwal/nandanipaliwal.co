@@ -69,7 +69,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 	}
 }
 
-const BlogLayout: React.FC<React.PropsWithChildren> = async ({ children }) => {
+const BlogLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return <>{children}</>
 }
 
