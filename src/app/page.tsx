@@ -1,99 +1,101 @@
-"use client";
-import useMousePosition from "../utils/use-mouse-position";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import Socials from "../Components/socials";
-
+'use client'
+import useMousePosition from '~/Components/ui/use-mouse-position'
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import Socials from '../Components/socials'
+import ProjectSection from '~/Components/project-section'
 
 export default function Home() {
+	const [isHovered, setIsHovered] = useState(false)
+	const { x, y } = useMousePosition()
+	const size = isHovered ? 400 : 40
 
-  const [isHovered, setIsHovered] = useState(false);
-  const { x, y } = useMousePosition();
-  const size = isHovered ? 400 : 40;
+	return (
+		<main className="">
+			<div className="relative  flex h-full flex-col items-center justify-center pb-20  md:mx-11 lg:mx-auto">
+				<motion.div
+					animate={{
+						WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
+						WebkitMaskSize: `${size}px`
+					}}
+					transition={{ type: 'tween', ease: 'backOut' }}
+					className="mask  absolute top-0 flex h-fit  w-full flex-col items-center pb-44 pt-56 text-black md:mx-11 md:px-14 lg:px-24 "
+				>
+					{/* hero section */}
+					<div
+						onMouseEnter={() => {
+							setIsHovered(true)
+						}}
+						onMouseLeave={() => {
+							setIsHovered(false)
+						}}
+						className="flex flex-col items-center justify-center"
+					>
+						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest lg:text-lg ">
+							Nandani Paliwal
+						</p>
+						<h1 className=" -space-y-2 text-center text-5xl font-bold uppercase sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl ">
+							<span className="block">National</span>
+							<span className="block">level</span>
+							<span className="block">Chess</span>
+							<span className="block">Player</span>
+						</h1>
+					</div>
 
-  return (
-    <main className="">
-      <div className="relative  lg:mx-auto flex h-full flex-col items-center justify-center mx-11 py-32">
-        <motion.div
-          animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
-            WebkitMaskSize: `${size}px`,
-          }}
-          transition={{ type: "tween", ease: "backOut" }}
-          className="mask w-full absolute h-full flex flex-col items-center justify-center text-black py-40"
-        >
-          {/* hero section */}
-          <div
-            onMouseEnter={() => {
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovered(false);
-            }}
-            className="flex flex-col items-center justify-center"
-          >
-            <p className="text-center text-base lg:text-lg mb-4 max-w-2xl tracking-widest uppercase font-semibold ">
-              Nandani Paliwal
-            </p>
-            <h1 className=" text-5xl -space-y-2 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold ">
-              <span className="block">National</span>
-              <span className="block">level</span>
-              <span className="block">Chess</span>
-              <span className="block">Player</span>
-            </h1>
-          </div>
+					{/* about section */}
+					<div
+						onMouseEnter={() => {
+							setIsHovered(true)
+						}}
+						onMouseLeave={() => {
+							setIsHovered(false)
+						}}
+						className="mt-48 flex w-fit flex-col px-4 md:px-0"
+					>
+						<p className="mb-4 text-left text-lg font-semibold uppercase tracking-[0.5em]">
+							About Me
+						</p>
+						<h2 className=" max-w-5xl text-4xl font-bold text-black sm:text-5xl lg:text-7xl">
+							National level Chess player who can move her queen and is good while
+							playing with white.
+						</h2>
+					</div>
+				</motion.div>
 
-          {/* about section */}
-          <div
-            onMouseEnter={() => {
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovered(false);
-            }}
-            className=" flex flex-col mt-48"
-          >
-            <p className="text-left mb-4 tracking-[0.5em] uppercase text-lg font-semibold">
-              About Me
-            </p>
-            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold dark:text-black text-white">
-              National level Chess player who can move her queen and is good while playing with white.
+				{/* actual content */}
+				<div className="actual-content flex h-fit w-full flex-col items-center pb-44 pt-56  md:mx-11 md:px-14 lg:px-24 ">
+					{/* hero section */}
+					<div className="flex flex-col items-center justify-center">
+						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest text-gray-600 dark:text-secondary-400 lg:text-lg ">
+							Nandani Paliwal
+						</p>
+						<h1 className="  -space-y-2 text-center text-5xl font-bold uppercase text-gray-600 dark:text-secondary-400 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl ">
+							<span className="block">Pixel</span>
+							<span className="block">Perfect</span>
+							<span className="block text-primary-600">Frontend</span>
+							<span className="block">Developer</span>
+						</h1>
+					</div>
 
-            </h2>
-          </div>
-        </motion.div>
+					{/* about section */}
+					<div className="mt-48 flex flex-col px-4 md:px-0">
+						{' '}
+						<p className="mb-4 text-left text-base font-semibold uppercase tracking-[0.5em] text-gray-600 dark:text-secondary-400 lg:text-lg">
+							About Me
+						</p>
+						<h2 className=" max-w-5xl text-4xl font-bold text-gray-600 dark:text-secondary-400 sm:text-5xl lg:text-7xl">
+							I&rsquo;m Frontend Developer who is leaning to create some awesome
+							animations on the canvas.
+						</h2>
+					</div>
+				</div>
 
-        {/* actual content */}
-        <div className="actual-content py-40 mx-11 lg:mx-auto h-full w-full flex flex-col items-center justify-center">
-          {/* hero section */}
-          <div className="flex flex-col items-center justify-center">
-            <p className="text-center text-base lg:text-lg mb-4 max-w-2xl tracking-widest uppercase font-semibold text-gray-600 dark:text-secondary-400 ">
-              Nandani Paliwal
-            </p>
-            <h1 className="  text-5xl -space-y-2 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl text-center uppercase font-bold text-gray-600 dark:text-secondary-400 ">
-              <span className="block">Pixel</span>
-              <span className="block">Perfect</span>
-              <span className="block text-primary-500">Frontend</span>
-              <span className="block">Developer</span>
-            </h1>
-          </div>
+				{/* Project Section */}
+				<ProjectSection />
 
-          {/* about section */}
-          <div className="flex flex-col mt-48">
-            {" "}
-            <p className="text-left text-base lg:text-lg mb-4 tracking-[0.5em] uppercase font-semibold text-gray-600 dark:text-secondary-400">
-              About Me
-            </p>
-            <h2 className=" text-4xl sm:text-5xl lg:text-7xl max-w-5xl font-bold text-gray-600 dark:text-secondary-400">
-              I&rsquo;m Frontend Developer who is leaning to create some awesome
-              animations on the canvas.
-            </h2>
-          </div>
-
-          {/* socials section */}
-         <Socials />
-        </div>
-      </div>
-    </main>
-  );
+				{/* socials section */}
+				<Socials />
+			</div>
+		</main>
+	)
 }

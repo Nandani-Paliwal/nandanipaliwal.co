@@ -1,0 +1,14 @@
+query SeriesList($host: String!) {
+	publication(host: $host) {
+		seriesList(first: 20) {
+			edges {
+				node {
+					slug
+					id
+					name
+                    
+				}
+			}
+		}
+	}
+}
