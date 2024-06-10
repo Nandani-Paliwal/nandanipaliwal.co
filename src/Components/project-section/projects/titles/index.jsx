@@ -42,7 +42,7 @@ function Title({ data, setSelectedProject }) {
 				}}
 			>
 				<motion.p style={{ clipPath: clip }}>{title}</motion.p>
-				<p>{title}</p>
+				<p className="">{title}</p>
 			</div>
 		</div>
 	)

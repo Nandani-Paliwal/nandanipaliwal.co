@@ -1,6 +1,5 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import SmoothScroll from './smooth-scroll'
 import Projects from './projects'
 
 const Earth = dynamic(() => import('./earth'), {
@@ -10,11 +9,9 @@ const Earth = dynamic(() => import('./earth'), {
 
 export default function Home() {
 	return (
-		<SmoothScroll>
-			<main className="relative flex h-[60vw] items-center justify-center bg-[#0f0f0f]">
-				<Earth />
-				<Projects />
-			</main>
-		</SmoothScroll>
+		<main className="relative flex h-[70vw] w-full items-center justify-center  bg-[#0f0f0f]">
+			<Earth />
+			<Projects />
+		</main>
 	)
 }
