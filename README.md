@@ -52,4 +52,6 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## :telephone_receiver: Contact
 
-Sarthak – [@nandanipaliwal](https://twitter.com/nandanipaliwal) - contact@nandanipaliwal.co -->
+
+Nandani – [@nandanipaliwal](https://twitter.com/nandanipaliwal) - contact@nandanipaliwal.co
+
