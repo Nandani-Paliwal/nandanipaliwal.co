@@ -10,7 +10,7 @@ import {
 	NON_ASCII_REGEX,
 	MetaTitle,
 	META_CATEGORY,
-	ProductDescription
+	siteDescription
 } from '~/constant'
 import RSS from 'rss'
 import { notFound } from 'next/navigation'
@@ -45,7 +45,7 @@ const constructRssFeedFromPosts = (
 
 	const feedConfig = {
 		title: `Blog | ${MetaTitle}}`,
-		description: ProductDescription,
+		description: siteDescription,
 		feed_url: `${baseUrl}/rss.xml${currentCursor ? `?after=${currentCursor}` : ''}`,
 		site_url: baseUrl,
 		image_url: `${CANONICAL_SITE_DOMAIN}/assets/logo/main-logo-orange.svg`,

@@ -9,7 +9,7 @@ import {
 	HASHNODE_GQL_ENDPOINT,
 	HASHNODE_PUBLICATION_HOST,
 	META_CLASSIFICATION,
-	ProductDescription
+	siteDescription
 } from '~/constant'
 import { notFound } from 'next/navigation'
 import { getSeriesBySlug } from './function'
@@ -23,7 +23,7 @@ export const generateMetadata = async (props: { params: { slug: string } }): Pro
 	const { series, publication } = await getSeriesBySlug(params.slug)
 	return {
 		title: series?.name || series.description?.text || publication.title,
-		description: series.description?.text || publication?.descriptionSEO || ProductDescription,
+		description: series.description?.text || publication?.descriptionSEO || siteDescription,
 		applicationName: 'nandanipaliwal',
 		authors: [{ name: series?.author.name, url: `${CANONICAL_SITE_DOMAIN}/about` }],
 		generator: 'Next.js',
@@ -40,8 +40,7 @@ export const generateMetadata = async (props: { params: { slug: string } }): Pro
 			type: 'article',
 			url: `${CANONICAL_SITE_DOMAIN}/series/${series?.slug}`,
 			title: series?.name || series.description?.text || publication.title,
-			description:
-				series.description?.text || publication?.descriptionSEO || ProductDescription,
+			description: series.description?.text || publication?.descriptionSEO || siteDescription,
 			images: [
 				{
 					url: series?.coverImage || `${CANONICAL_SITE_DOMAIN}/open-graph.png`
@@ -52,8 +51,7 @@ export const generateMetadata = async (props: { params: { slug: string } }): Pro
 		twitter: {
 			card: 'summary_large_image',
 			site: '@nandanipaliwal',
-			description:
-				series.description?.text || publication?.descriptionSEO || ProductDescription,
+			description: series.description?.text || publication?.descriptionSEO || siteDescription,
 			title: series?.name || series.description?.text || publication.title,
 			creator: '@nandanipaliwal',
 			images: series?.coverImage || `${CANONICAL_SITE_DOMAIN}/twitter-og.png`
