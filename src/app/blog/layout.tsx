@@ -6,7 +6,7 @@ import {
 	META_CLASSIFICATION,
 	META_KEYWORDS,
 	MetaTitle,
-	ProductDescription
+	siteDescription
 } from '~/constant'
 export const generateMetadata = async (): Promise<Metadata> => {
 	const data = await getBlogHomePageData()
@@ -19,7 +19,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 	return {
 		title: MetaTitle,
-		description: ProductDescription,
+		description: siteDescription,
 		applicationName: 'nandanipaliwal',
 		authors: [{ name: publication.author.name, url: `${CANONICAL_SITE_DOMAIN}/about` }],
 		generator: 'Next.js',
@@ -36,7 +36,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 			type: 'article',
 			url: `${CANONICAL_SITE_DOMAIN}/blog`,
 			title: MetaTitle,
-			description: ProductDescription,
+			description: siteDescription,
 			images: [
 				{
 					url: publication.ogMetaData.image || `${CANONICAL_SITE_DOMAIN}/open-graph.png`
@@ -47,7 +47,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
 		twitter: {
 			card: 'summary_large_image',
 			site: '@nandanipaliwal',
-			description: ProductDescription,
+			description: siteDescription,
 			title: MetaTitle,
 			creator: '@nandanipaliwal',
 			images: publication.ogMetaData.image || `${CANONICAL_SITE_DOMAIN}/open-graph.png`
