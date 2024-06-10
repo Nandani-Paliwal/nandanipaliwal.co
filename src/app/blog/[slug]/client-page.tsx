@@ -231,7 +231,7 @@ export default function BlogPostClientPage({ post, publication }: Props) {
 								<div id="post-content-parent" className="relative mb-10 pb-6">
 									<div
 										id="post-content-wrapper"
-										className="min-h-30  prose prose-lg mx-auto mb-10 break-words xl:prose-xl dark:text-gray-400"
+										className="min-h-30 dark:prose-invert prose prose-lg mx-auto mb-10 break-words xl:prose-xl dark:text-gray-400"
 										dangerouslySetInnerHTML={{ __html: memoisedContent }}
 									></div>
 								</div>
