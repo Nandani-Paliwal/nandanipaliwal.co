@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import styles from './style.module.scss'
+import Link from 'next/link'
 import { useScroll, motion, useTransform, useMotionTemplate } from 'framer-motion'
 
 export default function index({ data, setSelectedProject }) {
@@ -19,7 +20,7 @@ export default function index({ data, setSelectedProject }) {
 }
 
 function Title({ data, setSelectedProject }) {
-	const { title, speed, i } = data
+	const { title, href, speed, i } = data
 	const container = useRef(null)
 
 	const { scrollYProgress } = useScroll({
@@ -41,8 +42,10 @@ function Title({ data, setSelectedProject }) {
 					setSelectedProject(null)
 				}}
 			>
-				<motion.p style={{ clipPath: clip }}>{title}</motion.p>
-				<p className="">{title}</p>
+				<Link href={href} target="blank" className="h-full">
+					<motion.p style={{ clipPath: clip }}>{title}</motion.p>
+					<p className="">{title}</p>
+				</Link>
 			</div>
 		</div>
 	)
