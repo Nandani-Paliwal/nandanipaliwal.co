@@ -13,7 +13,7 @@ const socialList = [
 				strokeWidth="0"
 				viewBox="0 0 24 24"
 				aria-hidden="true"
-				className="h-10 w-10 text-gray-600 hover:text-black dark:text-secondary-400 dark:hover:text-black"
+				className="h-10 w-10 text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
 				xmlns="http://www.w3.org/2000/svg"
 				{...props}
 			>
@@ -31,7 +31,7 @@ const socialList = [
 				strokeWidth="0"
 				viewBox="0 0 24 24"
 				aria-hidden="true"
-				className="h-10 w-10 text-gray-600 hover:text-black dark:text-secondary-400 dark:hover:text-black"
+				className="h-10 w-10 text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
 				xmlns="http://www.w3.org/2000/svg"
 				{...props}
 			>
@@ -49,7 +49,7 @@ const socialList = [
 				strokeWidth="0"
 				viewBox="0 0 24 24"
 				aria-hidden="true"
-				className="h-10 w-10 text-gray-600 hover:text-black dark:text-secondary-400 dark:hover:text-black"
+				className="h-10 w-10 text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
 				xmlns="http://www.w3.org/2000/svg"
 				{...props}
 			>
@@ -67,7 +67,7 @@ const socialList = [
 				strokeWidth="0"
 				viewBox="0 0 24 24"
 				aria-hidden="true"
-				className="h-10 w-10 text-gray-600 hover:text-black dark:text-secondary-400 dark:hover:text-black"
+				className="h-10 w-10 text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
 				xmlns="http://www.w3.org/2000/svg"
 				{...props}
 			>
@@ -80,7 +80,7 @@ const socialList = [
 export default function Socials() {
 	return (
 		<>
-			<section className="fixed bottom-6 left-10 z-[1000] hidden md:block">
+			<section className="fixed bottom-6 left-2 z-[1000] hidden md:block lg:left-10">
 				<div className="flex flex-col items-center justify-center space-y-5">
 					{' '}
 					{socialList.map((social, index) => (

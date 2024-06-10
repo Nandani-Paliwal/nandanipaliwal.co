@@ -12,14 +12,14 @@ export default function Home() {
 
 	return (
 		<main className="">
-			<div className="relative  flex h-full flex-col items-center justify-center pb-20 pt-32 md:mx-11 lg:mx-auto">
+			<div className="relative  flex h-full flex-col items-center justify-center pb-20  md:mx-11 lg:mx-auto">
 				<motion.div
 					animate={{
 						WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
 						WebkitMaskSize: `${size}px`
 					}}
 					transition={{ type: 'tween', ease: 'backOut' }}
-					className="mask absolute top-32 flex h-full w-full flex-col items-center text-black min-[375px]:top-40 min-[432px]:top-44 md:top-52 md:px-14 lg:top-56 lg:px-24 xl:top-72 2xl:top-[30rem] "
+					className="mask  absolute top-0 flex h-fit  w-full flex-col items-center pb-44 pt-56 text-black md:mx-11 md:px-14 lg:px-24 "
 				>
 					{/* hero section */}
 					<div
@@ -50,7 +50,7 @@ export default function Home() {
 						onMouseLeave={() => {
 							setIsHovered(false)
 						}}
-						className="mt-48 flex flex-col px-4 md:px-0"
+						className="mt-48 flex w-fit flex-col px-4 md:px-0"
 					>
 						<p className="mb-4 text-left text-lg font-semibold uppercase tracking-[0.5em]">
 							About Me
@@ -63,7 +63,7 @@ export default function Home() {
 				</motion.div>
 
 				{/* actual content */}
-				<div className="actual-content flex h-full w-full flex-col items-center justify-center  md:mx-11 md:px-14 lg:px-24">
+				<div className="actual-content flex h-fit w-full flex-col items-center pb-44 pt-56  md:mx-11 md:px-14 lg:px-24 ">
 					{/* hero section */}
 					<div className="flex flex-col items-center justify-center">
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest text-gray-600 dark:text-secondary-400 lg:text-lg ">
@@ -72,7 +72,7 @@ export default function Home() {
 						<h1 className="  -space-y-2 text-center text-5xl font-bold uppercase text-gray-600 dark:text-secondary-400 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl ">
 							<span className="block">Pixel</span>
 							<span className="block">Perfect</span>
-							<span className="block text-primary-500">Frontend</span>
+							<span className="block text-primary-600">Frontend</span>
 							<span className="block">Developer</span>
 						</h1>
 					</div>

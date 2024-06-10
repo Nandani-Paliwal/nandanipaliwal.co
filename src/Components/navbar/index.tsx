@@ -53,7 +53,7 @@ const Header = () => {
 				<div className="relative z-50 mx-3  mt-5 flex items-center justify-between rounded-full border border-dark bg-white px-2 py-2 dark:bg-secondarydark sm:px-8">
 					<div className="relative z-10 flex items-center gap-16">
 						<Link href="/" aria-label="Home">
-							<h2 className="text-lg font-bold tracking-tighter text-primary-500">
+							<h2 className="text-lg font-bold tracking-tighter text-primary-600">
 								nandanipaliwal
 							</h2>
 						</Link>
@@ -131,9 +131,7 @@ const Header = () => {
 														<MobileNavLink href="/blog">
 															Blogs
 														</MobileNavLink>
-														<MobileNavLink href="#reviews">
-															Tech Stack
-														</MobileNavLink>
+
 														<div className="flex  items-center justify-center rounded-full">
 															<Button variant={'outline'}>
 																Hire for work

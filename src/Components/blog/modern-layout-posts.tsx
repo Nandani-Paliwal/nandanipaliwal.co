@@ -33,7 +33,7 @@ const PublicationPosts = (props: {
 			<div className="absolute left-0 top-24 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 "></div>
 			<div className="blog-articles-subarea h-full border-x border-dashed border-zinc-400 px-4 py-5 dark:border-zinc-700">
 				<div className="flex flex-col gap-3">
-					<h1 className="font-bold text-primary-500">Blogs</h1>
+					<h1 className="font-bold text-primary-600">Blogs</h1>
 					<div className="flex-col gap-3 md:flex">
 						<h2 className="max-w-3xl text-xl font-bold tracking-tighter md:text-5xl">
 							News, insights and more

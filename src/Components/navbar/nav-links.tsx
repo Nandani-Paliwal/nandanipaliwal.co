@@ -5,10 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 const NavLinks = () => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
-	const navigation = [
-		{ label: 'Blogs', href: '/blog' },
-		{ label: 'Tech Stack', href: '/tech-stack' }
-	]
+	const navigation = [{ label: 'Blogs', href: '/blog' }]
 
 	return navigation.map((item, index) => (
 		<Link

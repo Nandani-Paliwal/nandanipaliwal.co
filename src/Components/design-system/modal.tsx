@@ -6,9 +6,9 @@ import { clsx } from 'clsx'
 const customModalClassVariants = cva('relative z-10', {
 	variants: {
 		intent: {
-			primary: 'focus:ring-primary-500',
+			primary: 'focus:ring-primary-600',
 			secondary: 'focus:ring-secondary-500',
-			glass: 'focus:ring-primary-500',
+			glass: 'focus:ring-primary-600',
 			destructive: 'focus:ring-destructive-500'
 		},
 		position: {

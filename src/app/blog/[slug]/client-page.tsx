@@ -66,7 +66,7 @@ const TocTreeNode = ({
 				className={clsx(
 					'dark:hover;text-gray-300 group flex items-center rounded-md border-l-4 border-transparent px-3 py-2 text-sm  font-medium hover:bg-gray-50 hover:text-gray-900 dark:hover:bg-gray-500',
 					activeTocNodeId === `heading-${node.slug}`
-						? 'bg-gray-50 font-semibold text-primary-500 dark:bg-gray-300'
+						? 'bg-gray-50 font-semibold text-primary-600 dark:bg-gray-300'
 						: 'text-gray-600 '
 				)}
 			>
@@ -168,7 +168,7 @@ export default function BlogPostClientPage({ post, publication }: Props) {
 								<div className="flex flex-col gap-3 md:px-5 lg:px-8 xl:px-10">
 									<Link
 										href={getAbsolutePostUrl(post.slug)}
-										className="tooltip-handle text-sm font-medium text-primary-500"
+										className="tooltip-handle text-sm font-medium text-primary-600"
 										data-title={`${dayjs(post.publishedAt).format(
 											'dddd, MMM D, YYYY'
 										)}`}

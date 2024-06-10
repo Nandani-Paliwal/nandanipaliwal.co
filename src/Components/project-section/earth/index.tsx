@@ -3,7 +3,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { useScroll, useSpring } from 'framer-motion'
 import { motion as motion3D } from 'framer-motion-3d'
 import { useRef } from 'react'
-import { TextureLoader } from 'three/src/loaders/TextureLoader'
+import { TextureLoader } from 'three/src/loaders/TextureLoader.js'
 
 export default function Earth() {
 	const [color, normal, aoMap] = useLoader(TextureLoader, [
