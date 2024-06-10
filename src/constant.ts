@@ -8,7 +8,7 @@ export const CANONICAL_SITE_DOMAIN = 'https://www.nandanipaliwal.co'
 export const blurImageDimensions = { w: 400, h: 210 }
 
 export const siteDescription =
-	"Specializing in frontend engineering and animations, I'm dedicated to transforming core ideas into high-performance digital realities.Streamlining development processes and building robust, scalable solutions.Let’s drive innovation together! 🚀"
+	'As a passionate frontend engineer, I am highly into animation works. I like to build smooth user experiences via animations and visually appealing web interfaces. 🚀'
 
 export const MetaTitle = 'Nandani Paliwal'
 
