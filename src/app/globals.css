@@ -18,7 +18,7 @@
 
 .mask {
 	position: absolute;
-	mask-image: url(../../public/mask.svg);
+	mask-image: url(/assets/mask.svg);
 	/* mask-position: center; */
 	mask-repeat: no-repeat;
 	mask-size: 40px;

@@ -3,6 +3,8 @@ const ADVANCED_ANALYTICS_BASE_URL = 'https://stats.hashnode.com'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	transpilePackages: ['three'],
+
 	env: {
 		NEXT_PUBLIC_HASHNODE_GQL_ENDPOINT: process.env.NEXT_PUBLIC_HASHNODE_GQL_ENDPOINT,
 		NEXT_PUBLIC_HASHNODE_PUBLICATION_HOST: process.env.NEXT_PUBLIC_HASHNODE_PUBLICATION_HOST,

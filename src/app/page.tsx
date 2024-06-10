@@ -3,6 +3,7 @@ import useMousePosition from '~/Components/ui/use-mouse-position'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Socials from '../Components/socials'
+import ProjectSection from '~/Components/project-section'
 
 export default function Home() {
 	const [isHovered, setIsHovered] = useState(false)
@@ -90,6 +91,9 @@ export default function Home() {
 				</div>
 				{/* socials section */}
 				<Socials />
+
+				{/* Project Section */}
+				<ProjectSection />
 			</div>
 		</main>
 	)
