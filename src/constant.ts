@@ -94,3 +94,5 @@ export const DEFAULT_LIGHT_POST_COVER =
 
 export const DEFAULT_AVATAR =
 	'https://cdn.hashnode.com/res/hashnode/image/upload/v1659089761812/fsOct5gl6.png'
+
+export const NON_ASCII_REGEX = /[\u{0080}-\u{FFFF}]/gu
