@@ -1,11 +1,11 @@
 import { type MetadataRoute } from 'next'
-import { ProductDescription } from '~/constant'
+import { siteDescription } from '~/constant'
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
 		name: 'Nandani Paliwal',
 		short_name: 'Nandani',
-		description: ProductDescription,
+		description: siteDescription,
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#fff',

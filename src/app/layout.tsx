@@ -27,12 +27,19 @@ export const metadata: Metadata = {
 	generator: 'Next.js',
 	referrer: 'origin-when-cross-origin',
 	keywords: [
-		'innovation',
-		'product development',
-		'collaboration',
-		'business growth',
-		'project success',
-		'custom solutions'
+		'Software Development Engineer',
+		'web development',
+		'Frontend Developer',
+		'Next.js Developer',
+		'TypeScript Developer',
+		'Framer Motion',
+		'Tailwind CSS',
+		'SEO Optimization',
+		'Dynamic Web Applications',
+		'Responsive Websites',
+		'UI/UX Design',
+		'Web Performance Optimization',
+		'Web Animations'
 	],
 
 	publisher: 'nandanipaliwal',
@@ -56,7 +63,7 @@ export const metadata: Metadata = {
 		images: 'https://nandanipaliwal.com/twitter-og.png'
 	},
 	verification: {
-		google: 'mrOKVGMry1NOe6Hrn1lXqy0dYcuAqNVbiDr5HeSfRWo'
+		google: '3pcgDO252qqFNpLV8k-VpGfSw-iEqfwicYqlqWDFGa0'
 	},
 	formatDetection: { telephone: false },
 	appleWebApp: true,

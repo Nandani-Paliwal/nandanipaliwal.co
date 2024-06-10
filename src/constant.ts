@@ -15,71 +15,60 @@ export const MetaTitle = 'Nandani Paliwal'
 export const META_CATEGORY = [
 	'Software Development ',
 	'MVP development',
-	'SaaS Solutions',
 	'MVP design and development',
-	'Technology Consulting',
-	'Startup Solutions',
-	'Custom Software Development',
-	'Minimum Viable Product Development Services',
-	'Lean Startup',
 	'Agile Development',
 	'MVP Products',
 	'Agile Methodology MVP',
-	'MVP Agile Development'
+	'MVP Agile Development',
+	'Frontend Development',
+	'Web Development',
+	'Software Engineering',
+	'Interactive Web Design',
+	'Responsive Design',
+	'User Experience Design',
+	'Freelance Developer',
+	'Web Animations'
 ]
 
 export const META_CLASSIFICATION = [
-	'Software Development Services',
 	'Technology Solutions',
-	'Startup Tech Support',
-	'SaaS Product Development',
-	'Custom IT Solutions',
-	'Custom Software Development Services',
-	'Minimum Viable Product Development Services',
-	'Lean Startup',
 	'MVP design and development Services',
 	'Agile Development Services',
-	'Business',
 	'Technology',
-	'MVP Products'
+	'MVP Products',
+	'Frontend Development',
+	'Web Development',
+	'Software Engineering',
+	'Interactive Web Design',
+	'Responsive Design',
+	'User Experience Design',
+	'Freelance Developer',
+	'Technology',
+	'Software Development',
+	'Frontend Engineering',
+	'Web Design and Development',
+	'Freelance Work',
+	'Web Animations'
 ]
 
 export const META_KEYWORDS = [
-	'tech company',
-	'IT service company',
-	'IT consulting',
-	'startup',
-	'entrepreneurship',
+	'Software Development Engineer',
 	'product development',
-	'software development company',
-	'custom software solutions',
 	'web development',
-	'minimum viable product',
-	'MVP development',
-	'business growth',
-	'brand building',
-	'how to build an mvp',
-	'building mvp in entrepreneurship',
-	'building an mvp',
-	'minimum viable product software',
-	'mvp product',
-	'agile methodology mvp',
-	'ideate',
-	'innovate',
-	'elevate',
-	'mvp agile development',
 	'agile',
-	'app development',
-	'ai integration',
-	'custom software development firm',
-	'custom software development solutions',
-	'custom healthcare software development',
-	'custom software development service',
-	'custom software development company in india'
+	'Frontend Developer',
+	'Next.js Developer',
+	'TypeScript Developer',
+	'Framer Motion',
+	'Tailwind CSS',
+	'SEO Optimization',
+	'Dynamic Web Applications',
+	'Responsive Websites',
+	'UI/UX Design',
+	'Technical Content Writing',
+	'Web Performance Optimization',
+	'Web Animations'
 ]
-
-export const ProductDescription =
-	'Softlancer builds MVPs and other software solutions. We help startups in launching MVP via best product design thinking and agile methodology of development.'
 
 export const HASHNODE_PUBLICATION_HOST = process.env.NEXT_PUBLIC_HASHNODE_PUBLICATION_HOST
 
