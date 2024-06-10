@@ -5,37 +5,43 @@ import Descriptions from './descriptions'
 
 const data = [
 	{
-		title: 'Ford',
-		description: 'Working on the Next-Generation HMI Experience without no driving experience.',
-		speed: 0.5
-	},
-	{
-		title: 'UFC',
-		description: 'Developed the Future of UFC Sports Ecosystem despite not being a sports fan.',
-		speed: 0.5
-	},
-	{
-		title: 'Lincoln',
+		title: 'Enseedling',
 		description:
-			'Defined the visual concept and design language for the Lincoln Zephyr 2022 but never seen it in real life.',
+			'Developed enseedling.com using Next.js and TypeScript, with Framer Motion animations and Hashnode CMS, resulting in $350K sponsorship and significant performance and engagement improvements.',
+		speed: 0.5
+	},
+	{
+		title: 'Softlancer',
+		description:
+			'Developed a dynamic, responsive website for Softlancer using Next.js, SSR for SEO, and Tailwind CSS, with Framer Motion animations and Lenis Smooth Scroll for enhanced UX, improving page speed by 80%.',
+
+		speed: 0.5
+	},
+	{
+		title: 'Goldman',
+		description:
+			'Integrated Typeform CMS for dynamic forms, enhancing engagement and data collection, and implemented an EMI calculator, increasing user session time by 30%.',
+
 		speed: 0.67
 	},
 	{
-		title: 'Royal Caribbean',
+		title: 'OppNexus',
 		description:
-			'I was just one person on a massive team that created an entire Royal Caribbean eco-system.',
+			'Developed a MERN stack platform for job applications with real-time tracking, RESTful APIs, secure authentication, and MongoDB, enhancing full-stack development and web security skills.',
+
 		speed: 0.8
 	},
 	{
-		title: 'Sleepiq',
+		title: 'GDSC',
 		description:
-			'Designed a 1M+ users product utilizing my best personal experience: sleeping.',
+			'Selected as Lead for the inaugural Google Developer Student Club at BU from 400 candidates, orchestrating 50+ events with industry experts to enhance community learning and engagement.',
+
 		speed: 0.8
 	},
 	{
-		title: 'NFL',
+		title: 'MLSA',
 		description:
-			'Explored the Future of Fantasy Football while being in a country where football means a total different sport.',
+			'Mentored 100+ new MLSAs as Beta MLSA, organizing 10+ events on Git, GitHub, and React, leveraging both online and in-person formats.',
 		speed: 0.8
 	}
 ]
