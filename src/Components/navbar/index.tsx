@@ -48,7 +48,7 @@ function MobileNavLink({ children, ...props }: any) {
 
 const Header = () => {
 	return (
-		<header className="fixed z-50 w-full bg-transparent">
+		<header className="fixed z-[9999] w-full bg-transparent">
 			<nav className="mx-auto max-w-xl md:max-w-2xl xl:max-w-7xl">
 				<div className="relative z-50 mx-3  mt-5 flex items-center justify-between rounded-full border border-dark bg-white px-2 py-2 dark:bg-secondarydark sm:px-8">
 					<div className="relative z-10 flex items-center gap-16">

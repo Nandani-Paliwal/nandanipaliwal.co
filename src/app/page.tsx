@@ -12,14 +12,14 @@ export default function Home() {
 
 	return (
 		<main className="">
-			<div className="relative  flex h-full flex-col items-center justify-center py-32 md:mx-11 lg:mx-auto">
+			<div className="relative  flex h-full flex-col items-center justify-center pb-20 pt-32 md:mx-11 lg:mx-auto">
 				<motion.div
 					animate={{
 						WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
 						WebkitMaskSize: `${size}px`
 					}}
 					transition={{ type: 'tween', ease: 'backOut' }}
-					className="mask absolute flex h-full min-h-screen w-full flex-col items-center justify-center py-40 text-black md:px-14 lg:px-24"
+					className="mask absolute top-32 flex h-full w-full flex-col items-center text-black min-[375px]:top-40 min-[432px]:top-44 md:top-52 md:px-14 lg:top-56 lg:px-24 xl:top-72 2xl:top-[30rem] "
 				>
 					{/* hero section */}
 					<div
@@ -63,7 +63,7 @@ export default function Home() {
 				</motion.div>
 
 				{/* actual content */}
-				<div className="actual-content flex h-full w-full flex-col items-center justify-center py-40 md:mx-11 md:px-14 lg:px-24">
+				<div className="actual-content flex h-full w-full flex-col items-center justify-center  md:mx-11 md:px-14 lg:px-24">
 					{/* hero section */}
 					<div className="flex flex-col items-center justify-center">
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest text-gray-600 dark:text-secondary-400 lg:text-lg ">
@@ -89,11 +89,12 @@ export default function Home() {
 						</h2>
 					</div>
 				</div>
-				{/* socials section */}
-				<Socials />
 
 				{/* Project Section */}
 				<ProjectSection />
+
+				{/* socials section */}
+				<Socials />
 			</div>
 		</main>
 	)

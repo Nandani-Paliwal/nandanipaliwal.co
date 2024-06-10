@@ -80,7 +80,7 @@ const socialList = [
 export default function Socials() {
 	return (
 		<>
-			<section className="fixed bottom-6 left-10 hidden md:block">
+			<section className="fixed bottom-6 left-10 z-[1000] hidden md:block">
 				<div className="flex flex-col items-center justify-center space-y-5">
 					{' '}
 					{socialList.map((social, index) => (
@@ -92,7 +92,7 @@ export default function Socials() {
 					))}
 				</div>
 			</section>
-			<section className="flex md:hidden">
+			<section className="flex py-10 md:hidden">
 				<div className="flex items-center justify-between space-x-5">
 					{' '}
 					{socialList.map((social, index) => (
