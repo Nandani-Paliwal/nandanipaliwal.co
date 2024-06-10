@@ -5,7 +5,7 @@ import { type PostFullFragment, type PublicationFragment } from 'root/generated/
 import { clsx } from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
-import { addArticleJsonLd, getAbsolutePostUrl, getPostUrl } from '~/reusable-functions'
+import { addArticleJsonLd, getAbsolutePostUrl } from '~/reusable-functions'
 import { dayjs } from '~/utils/dayjs'
 import { blurImageDimensions } from '~/constant'
 import { getBlurHash, imageReplacer, resizeImage } from '~/utils/blog/image-utils'
@@ -88,7 +88,7 @@ const TocTreeNode = ({
 	</div>
 )
 
-export default function BlogPostClientPage({ post, morePosts, publication }: Props) {
+export default function BlogPostClientPage({ post, publication }: Props) {
 	if (!post) {
 		throw new Error('No post found!')
 	}
