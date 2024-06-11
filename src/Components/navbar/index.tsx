@@ -65,27 +65,12 @@ const Header = () => {
 						<ToggleTheme />
 					</span>
 					<div className="flex items-center gap-6">
-						<div className="z-10 rounded-md">
-							<Link href="" className="">
-								<div className=" relative rounded-full ">
-									<span className="relative  isolate m-[-1px] block overflow-hidden rounded-full p-[1px] [transform:translateZ(10px)] ">
-										<span
-											aria-hidden="true"
-											className=" absolute bottom-0 left-0 right-0 top-0 block origin-center rounded-full"
-										></span>
-										<span
-											aria-hidden="true"
-											className=" duration-900  absolute bottom-0 left-0 right-0 top-0 block  opacity-0 transition-opacity ease-linear"
-										></span>
-										<span className="hidden lg:flex">
-											<div className="flex  items-center justify-center rounded-full">
-												<Button variant={'outline'}>Hire for work</Button>
-											</div>
-										</span>
-									</span>
-								</div>
-							</Link>
-						</div>
+						<Link
+							href="mailto:reachnandanipaliwal@gmail.com"
+							className="hidden lg:flex"
+						>
+							<Button variant={'outline'}>Hire for work</Button>
+						</Link>
 						<span className="hidden lg:flex">
 							<ToggleTheme />
 						</span>
@@ -132,10 +117,12 @@ const Header = () => {
 															Blogs
 														</MobileNavLink>
 
-														<div className="flex  items-center justify-center rounded-full">
-															<Button variant={'outline'}>
-																Hire for work
-															</Button>
+														<div className="flex items-center justify-center rounded-full">
+															<Link href="mailto:reachnandanipaliwal@gmail.com">
+																<Button variant={'outline'}>
+																	Hire for work
+																</Button>
+															</Link>
 														</div>
 													</div>
 												</Popover.Panel>

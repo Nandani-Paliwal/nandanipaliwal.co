@@ -14,7 +14,7 @@ const buttonClassVariants = cva(
 				destructive: 'focus:ring-destructive-500'
 			},
 			size: {
-				small: 'rounded-md px-2.5 py-1.5 text-xs',
+				small: 'rounded-ful px-2.5 py-1.5 text-xs',
 				medium: 'rounded-full px-4 py-2 text-sm',
 				large: 'rounded-full px-4 py-2.5 text-base'
 			},
