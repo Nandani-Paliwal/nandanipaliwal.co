@@ -4,7 +4,7 @@ import Projects from './projects'
 
 const Earth = dynamic(() => import('./earth'), {
 	ssr: false,
-	loading: () => <img src="/assets/placeholder.png" className="h-full"></img>
+	loading: () => <img src="/assets/project-section/placeholder.png" className="h-full"></img>
 })
 
 export default function Home() {

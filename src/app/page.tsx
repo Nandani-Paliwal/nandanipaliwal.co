@@ -12,14 +12,14 @@ export default function Home() {
 
 	return (
 		<main className="">
-			<div className="relative  flex h-full flex-col items-center justify-center pb-20  md:mx-11 lg:mx-auto">
+			<div className="relative  flex h-full flex-col items-center justify-center md:mx-auto">
 				<motion.div
 					animate={{
 						WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
 						WebkitMaskSize: `${size}px`
 					}}
 					transition={{ type: 'tween', ease: 'backOut' }}
-					className="mask  absolute top-0 flex h-fit  w-full flex-col items-center pb-44 pt-56 text-black md:mx-11 md:px-14 lg:px-24 "
+					className="mask  absolute top-0 flex h-fit  w-full flex-col items-center pb-32 pt-56 text-black md:mx-11 md:px-14 md:pb-44 lg:px-24 "
 				>
 					{/* hero section */}
 					<div
@@ -34,7 +34,7 @@ export default function Home() {
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest lg:text-lg ">
 							Nandani Paliwal
 						</p>
-						<h1 className=" -space-y-2 text-center text-5xl font-bold uppercase sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl ">
+						<h1 className="-space-y-2 text-center text-[3.5rem] font-bold uppercase leading-none min-[375px]:text-[4rem] sm:-space-y-4 md:text-7xl lg:-space-y-6 lg:text-9xl ">
 							<span className="block">National</span>
 							<span className="block">level</span>
 							<span className="block">Chess</span>
@@ -50,9 +50,9 @@ export default function Home() {
 						onMouseLeave={() => {
 							setIsHovered(false)
 						}}
-						className="mt-48 flex w-fit flex-col px-4 md:px-0"
+						className="px-4lg:px-0 mt-32 flex w-fit flex-col text-left md:mt-48"
 					>
-						<p className="mb-4 text-left text-lg font-semibold uppercase tracking-[0.5em]">
+						<p className="mb-4 text-lg font-semibold uppercase tracking-[0.5em]">
 							About Me
 						</p>
 						<h2 className=" max-w-5xl text-4xl font-bold text-black sm:text-5xl lg:text-7xl">
@@ -63,13 +63,13 @@ export default function Home() {
 				</motion.div>
 
 				{/* actual content */}
-				<div className="actual-content flex h-fit w-full flex-col items-center pb-44 pt-56  md:mx-11 md:px-14 lg:px-24 ">
+				<div className="actual-content flex h-fit w-full flex-col items-center pb-32 pt-56 md:mx-11  md:px-14 md:pb-44 lg:px-24 ">
 					{/* hero section */}
 					<div className="flex flex-col items-center justify-center">
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest text-gray-600 dark:text-secondary-400 lg:text-lg ">
 							Nandani Paliwal
 						</p>
-						<h1 className="  -space-y-2 text-center text-5xl font-bold uppercase text-gray-600 dark:text-secondary-400 sm:-space-y-4 sm:text-7xl lg:-space-y-6 lg:text-9xl ">
+						<h1 className="-space-y-2 text-center text-[3.5rem] font-bold uppercase leading-none  text-gray-600 dark:text-secondary-400 min-[375px]:text-[4rem] sm:-space-y-4 md:text-7xl lg:-space-y-6 lg:text-9xl">
 							<span className="block">Pixel</span>
 							<span className="block">Perfect</span>
 							<span className="block text-primary-600">Frontend</span>
@@ -78,9 +78,9 @@ export default function Home() {
 					</div>
 
 					{/* about section */}
-					<div className="mt-48 flex flex-col px-4 md:px-0">
+					<div className="mt-32 flex flex-col px-4 text-left md:mt-48 lg:px-0">
 						{' '}
-						<p className="mb-4 text-left text-base font-semibold uppercase tracking-[0.5em] text-gray-600 dark:text-secondary-400 lg:text-lg">
+						<p className="mb-4  text-base font-semibold uppercase tracking-[0.5em] text-gray-600 dark:text-secondary-400 lg:text-lg">
 							About Me
 						</p>
 						<h2 className=" max-w-5xl text-4xl font-bold text-gray-600 dark:text-secondary-400 sm:text-5xl lg:text-7xl">
