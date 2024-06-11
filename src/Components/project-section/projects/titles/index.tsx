@@ -1,4 +1,4 @@
-import React, { Dispatch, useRef } from 'react'
+import React, { useRef } from 'react'
 import styles from './style.module.scss'
 import Link from 'next/link'
 import { useScroll, motion, useTransform, useMotionTemplate } from 'framer-motion'
@@ -7,7 +7,7 @@ export default function index({
 	data,
 	setSelectedProject
 }: {
-	data: [{ i: number; title: string; description: string; href: string; speed: number }]
+	data: { i: number; title: string; description: string; href: string; speed: number }[]
 	setSelectedProject: (index: number | null) => void
 }) {
 	return (

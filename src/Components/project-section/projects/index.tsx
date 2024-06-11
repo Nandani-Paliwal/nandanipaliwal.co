@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import Titles from './titles'
 import Descriptions from './descriptions'
-import { StringDecoder } from 'string_decoder'
 
 const data = [
 	{

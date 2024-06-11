@@ -5,7 +5,7 @@ export default function index({
 	data,
 	selectedProject
 }: {
-	data: [{ i: number; title: string; description: string; href: string; speed: number }]
+	data: { i: number; title: string; description: string; href: string; speed: number }[]
 	selectedProject: number | null
 }) {
 	const crop = (string: string, maxLength: number) => {
