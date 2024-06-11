@@ -45,8 +45,8 @@
     "src/components/navbar/index.tsx",
     "src/app/hire/[questionSlug]",
     "src/components/works-and-products",
-    "src/Components/project-section/projects/descriptions/index.jsx",
-    "src/Components/project-section/projects/titles/index.jsx",
+    "src/Components/project-section/projects/descriptions/index.tsx",
+    "src/Components/project-section/projects/titles/index.tsx",
     "src/Components/project-section/smooth-scroll/index.jsx"
   ],
   "exclude": [

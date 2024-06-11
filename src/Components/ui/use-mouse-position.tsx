@@ -16,6 +16,7 @@ export default function useMousePosition() {
 				y: prevPos.y + window.scrollY
 			}))
 		}
+		console.log(window.scrollY)
 
 		window.addEventListener('mousemove', updatePosition)
 		window.addEventListener('scroll', handleScroll)

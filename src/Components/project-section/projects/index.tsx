@@ -5,6 +5,7 @@ import Descriptions from './descriptions'
 
 const data = [
 	{
+		i: 1,
 		title: 'Enseedling',
 		description:
 			'Developed enseedling.com using Next.js and TypeScript, with Framer Motion animations and Hashnode CMS, resulting in $350K sponsorship and significant performance and engagement improvements.',
@@ -12,6 +13,7 @@ const data = [
 		speed: 0.5
 	},
 	{
+		i: 2,
 		title: 'Softlancer',
 		description:
 			'Developed a dynamic, responsive website for Softlancer using Next.js, SSR for SEO, and Tailwind CSS, with Framer Motion animations and Lenis Smooth Scroll for enhanced UX, improving page speed by 80%.',
@@ -20,6 +22,7 @@ const data = [
 		speed: 0.5
 	},
 	{
+		i: 3,
 		title: 'Goldman',
 		description:
 			'Integrated Typeform CMS for dynamic forms, enhancing engagement and data collection, and implemented an EMI calculator, increasing user session time by 30%.',
@@ -28,6 +31,7 @@ const data = [
 		speed: 0.67
 	},
 	{
+		i: 4,
 		title: 'OppNexus',
 		description:
 			'Developed a MERN stack platform for job applications with real-time tracking, RESTful APIs, secure authentication, and MongoDB, enhancing full-stack development and web security skills.',
@@ -36,6 +40,7 @@ const data = [
 		speed: 0.8
 	},
 	{
+		i: 5,
 		title: 'GDSC',
 		description:
 			'Selected as Lead for the inaugural Google Developer Student Club at BU from 400 candidates, orchestrating 50+ events with industry experts to enhance community learning and engagement.',
@@ -44,6 +49,7 @@ const data = [
 		speed: 0.8
 	},
 	{
+		i: 6,
 		title: 'MLSA',
 		description:
 			'Mentored 100+ new MLSAs as Beta MLSA, organizing 10+ events on Git, GitHub, and React, leveraging both online and in-person formats.',
@@ -53,7 +59,7 @@ const data = [
 ]
 
 export default function Projects() {
-	const [selectedProject, setSelectedProject] = useState(null)
+	const [selectedProject, setSelectedProject] = useState<number | null>(null)
 	return (
 		<div className="absolute z-10 w-full">
 			<Titles data={data} setSelectedProject={setSelectedProject} />

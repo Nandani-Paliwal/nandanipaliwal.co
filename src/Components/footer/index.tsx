@@ -128,9 +128,8 @@ const Footer = () => {
 						target="blank"
 						className="text-primary-600"
 					>
-						minhpham.design
+						minhpham.design.
 					</Link>
-					. | &copy; {new Date().getFullYear()} Rights Reserved
 				</p>
 			</div>
 		</footer>

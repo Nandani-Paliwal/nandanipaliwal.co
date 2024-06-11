@@ -45,13 +45,13 @@ export const metadata: Metadata = {
 	publisher: 'nandanipaliwal',
 	robots: 'index, follow',
 	creator: 'Nandani Paliwal',
-	manifest: 'https://nandanipaliwal.com/manifest.json',
+	manifest: 'https://nandanipaliwal.co/manifest.json',
 	openGraph: {
 		type: 'website',
-		url: 'https://nandanipaliwal.com',
+		url: 'https://nandanipaliwal.co',
 		title: 'nandanipaliwal',
 		description: siteDescription,
-		images: [{ url: 'https://nandanipaliwal.com/open-graph.png' }],
+		images: [{ url: 'https://nandanipaliwal.co/open-graph.png' }],
 		siteName: 'nandanipaliwal'
 	},
 	twitter: {
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
 		description: siteDescription,
 		title: 'nandanipaliwal',
 		creator: '@nandanipaliwal',
-		images: 'https://nandanipaliwal.com/twitter-og.png'
+		images: 'https://nandanipaliwal.co/twitter-og.png'
 	},
 	verification: {
 		google: '3pcgDO252qqFNpLV8k-VpGfSw-iEqfwicYqlqWDFGa0'
 	},
 	formatDetection: { telephone: false },
 	appleWebApp: true,
-	assets: 'https://nandanipaliwal.com/assets',
+	assets: 'https://nandanipaliwal.co/assets',
 	category: 'Innovation, Product Development, Business Solutions',
 	classification: 'Innovative Development Agency',
 	other: {
@@ -76,8 +76,8 @@ export const metadata: Metadata = {
 	},
 	metadataBase: new URL('https://nandanipaliwal.co'),
 	icons: [
-		{ rel: 'icon', url: 'https://nandanipaliwal.com/favicon.ico' },
-		{ rel: 'apple-touch-icon', url: 'https://nandanipaliwal.com/apple-icon.png' }
+		{ rel: 'icon', url: 'https://nandanipaliwal.co/favicon.ico' },
+		{ rel: 'apple-touch-icon', url: 'https://nandanipaliwal.co/apple-icon.png' }
 	]
 }
 
