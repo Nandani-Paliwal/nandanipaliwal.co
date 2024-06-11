@@ -1,14 +1,20 @@
 import React from 'react'
 import styles from './style.module.scss'
 
-export default function index({ data, selectedProject }) {
-	const crop = (string, maxLength) => {
+export default function index({
+	data,
+	selectedProject
+}: {
+	data: [{ i: number; title: string; description: string; href: string; speed: number }]
+	selectedProject: number | null
+}) {
+	const crop = (string: string, maxLength: number) => {
 		return string.substring(0, maxLength)
 	}
 
 	return (
 		<div className={styles.descriptions}>
-			{data.map((project, i) => {
+			{data.map((project, i: number) => {
 				const { title, description } = project
 				return (
 					<div

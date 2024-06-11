@@ -1,25 +1,39 @@
-import React, { useRef } from 'react'
+import React, { Dispatch, useRef } from 'react'
 import styles from './style.module.scss'
 import Link from 'next/link'
 import { useScroll, motion, useTransform, useMotionTemplate } from 'framer-motion'
 
-export default function index({ data, setSelectedProject }) {
+export default function index({
+	data,
+	setSelectedProject
+}: {
+	data: [{ i: number; title: string; description: string; href: string; speed: number }]
+	setSelectedProject: (index: number | null) => void
+}) {
 	return (
 		<div className={styles.titles}>
-			{data.map((project, i) => {
-				return (
-					<Title
-						key={i}
-						data={{ ...project, i }}
-						setSelectedProject={setSelectedProject}
-					/>
-				)
-			})}
+			{data.map(
+				(project: { i: number; title: string; href: string; speed: number }, i: number) => {
+					return (
+						<Title
+							key={i}
+							data={{ ...project, i }}
+							setSelectedProject={setSelectedProject}
+						/>
+					)
+				}
+			)}
 		</div>
 	)
 }
 
-function Title({ data, setSelectedProject }) {
+function Title({
+	data,
+	setSelectedProject
+}: {
+	data: { i: number; title: string; href: string; speed: number }
+	setSelectedProject: (index: number | null) => void
+}) {
 	const { title, href, speed, i } = data
 	const container = useRef(null)
 
