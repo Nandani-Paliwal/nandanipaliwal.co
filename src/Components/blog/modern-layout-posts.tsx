@@ -32,9 +32,9 @@ const PublicationPosts = (props: {
 		<div className="blog-articles-area relative mx-auto mt-10 px-4 py-20 dark:border-slate-800">
 			<div className="absolute left-0 top-24 -z-0 h-px w-full border-t border-dashed border-zinc-400 py-5 dark:border-zinc-700 "></div>
 			<div className="blog-articles-subarea h-full border-x border-dashed border-zinc-400 px-4 py-5 dark:border-zinc-700">
-				<div className="flex flex-col gap-3">
+				<div className="flex flex-col gap-3 pb-10">
 					<h1 className="font-bold text-primary-600">Blogs</h1>
-					<div className="flex-col gap-3 md:flex">
+					{/* <div className="flex-col gap-3 md:flex">
 						<h2 className="max-w-3xl text-xl font-bold tracking-tighter md:text-5xl">
 							News, insights and more
 						</h2>
@@ -42,7 +42,7 @@ const PublicationPosts = (props: {
 							Learn more about Clerk, our approach to authentication, and company
 							news.
 						</p>
-					</div>
+					</div> */}
 				</div>
 				<div className="blog-articles-container 0 container mx-auto flex  w-full flex-col gap-10 pt-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:pt-10 2xl:pt-5">
 					{slicedPosts.map(post => (
