@@ -2,7 +2,7 @@ import './globals.css'
 import { Poppins } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import StandardLayout from '~/Components/layouts/standard-layout'
-import { siteDescription } from '~/constant'
+import { siteDescription, CANONICAL_SITE_DOMAIN } from '~/constant'
 
 const poppins = Poppins({
 	weight: '400',
@@ -75,6 +75,9 @@ export const metadata: Metadata = {
 		'mobile-web-app-capable': 'yes'
 	},
 	metadataBase: new URL('https://nandanipaliwal.co'),
+	alternates: {
+		canonical: new URL(CANONICAL_SITE_DOMAIN)
+	},
 	icons: [
 		{ rel: 'icon', url: 'https://nandanipaliwal.co/favicon.ico' },
 		{ rel: 'apple-touch-icon', url: 'https://nandanipaliwal.co/apple-icon.png' }

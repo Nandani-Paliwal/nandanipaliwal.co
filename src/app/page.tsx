@@ -34,12 +34,12 @@ export default function Home() {
 						<p className="mb-4 max-w-2xl text-center text-base font-semibold uppercase tracking-widest lg:text-lg ">
 							Nandani Paliwal
 						</p>
-						<h1 className="-space-y-2 text-center text-[3.5rem] font-bold uppercase leading-none min-[375px]:text-[4rem] sm:-space-y-4 md:text-7xl lg:-space-y-6 lg:text-9xl ">
+						<h2 className="-space-y-2 text-center text-[3.5rem] font-bold uppercase leading-none min-[375px]:text-[4rem] sm:-space-y-4 md:text-7xl lg:-space-y-6 lg:text-9xl ">
 							<span className="block">National</span>
 							<span className="block">level</span>
 							<span className="block">Chess</span>
 							<span className="block">Player</span>
-						</h1>
+						</h2>
 					</div>
 
 					{/* about section */}
