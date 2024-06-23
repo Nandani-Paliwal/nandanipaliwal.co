@@ -66,8 +66,9 @@ const Header = () => {
 					</span>
 					<div className="flex items-center gap-6">
 						<Link
-							href="mailto:reachnandanipaliwal@gmail.com"
+							href="https://cal.com/nandanipaliwal"
 							className="hidden lg:flex"
+							target="_blank"
 						>
 							<Button variant={'outline'}>Hire for work</Button>
 						</Link>
@@ -113,12 +114,21 @@ const Header = () => {
 													className="absolute inset-x-0 top-20 z-0 origin-top rounded-2xl border border-dark bg-white px-6 py-6 shadow-2xl shadow-gray-900/20 dark:bg-secondarydark"
 												>
 													<div className="flex flex-col items-center justify-center space-y-2">
-														<MobileNavLink href="/blog">
+														<MobileNavLink href="/blog" target="_blank">
 															Blogs
+														</MobileNavLink>
+														<MobileNavLink
+															href="/resume.pdf"
+															target="_blank"
+														>
+															Resume
 														</MobileNavLink>
 
 														<div className="flex items-center justify-center rounded-full">
-															<Link href="mailto:reachnandanipaliwal@gmail.com">
+															<Link
+																href="https://cal.com/nandanipaliwal"
+																target="_blank"
+															>
 																<Button variant={'outline'}>
 																	Hire for work
 																</Button>
