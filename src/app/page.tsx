@@ -35,10 +35,10 @@ export default function Home() {
 							Nandani Paliwal
 						</p>
 						<h2 className="-space-y-2 text-center text-[3.5rem] font-bold uppercase leading-none min-[375px]:text-[4rem] sm:-space-y-4 md:text-7xl lg:-space-y-6 lg:text-9xl ">
-							<span className="block">National</span>
-							<span className="block">level</span>
-							<span className="block">Chess</span>
-							<span className="block">Player</span>
+							<span className="block">Can</span>
+							<span className="block">be a</span>
+							<span className="block text-white">Generalist</span>
+							<span className="block">at times</span>
 						</h2>
 					</div>
 
@@ -56,8 +56,9 @@ export default function Home() {
 							About Me
 						</p>
 						<h2 className=" max-w-5xl text-4xl font-bold text-black sm:text-5xl lg:text-7xl">
-							National level Chess player who can move her queen and is good while
-							playing with white.
+							While focused on frontend development, I’m adaptable and eager to learn
+							new technologies and trends, embracing challenges to ensure project
+							success in any role.
 						</h2>
 					</div>
 				</motion.div>
@@ -84,8 +85,9 @@ export default function Home() {
 							About Me
 						</p>
 						<h2 className=" max-w-5xl text-4xl font-bold text-gray-600 dark:text-secondary-400 sm:text-5xl lg:text-7xl">
-							I&rsquo;m Frontend Developer who is leaning to create some awesome
-							animations on the canvas.
+							As a passionate frontend engineer, I craft smooth, user-centric
+							experiences with visually appealing animations while staying updated on
+							the latest industry trends.
 						</h2>
 					</div>
 				</div>

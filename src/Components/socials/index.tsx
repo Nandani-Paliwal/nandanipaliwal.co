@@ -22,6 +22,41 @@ const socialList = [
 		)
 	},
 	{
+		name: 'Peerlist',
+		href: 'https://peerlist.io/nandanipaliwal',
+		icon: (props: SVGAttributes<SVGElement>) => (
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				className="h-9 w-9"
+				xmlns="http://www.w3.org/2000/svg"
+				{...props}
+			>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M3.10518 3.10518C1.53658 4.67378 0.855183 7.34909 0.855183 12C0.855183 16.6509 1.53658 19.3262 3.10518 20.8948C4.67378 22.4634 7.35366 23.1448 11.9954 23.1448C16.6372 23.1448 19.3171 22.4634 20.8857 20.8948C22.4543 19.3262 23.1357 16.6509 23.1357 12C23.1357 7.34909 22.4543 4.67378 20.8857 3.10518C19.3262 1.53659 16.6463 0.855183 12 0.855183C7.35366 0.855183 4.67378 1.53659 3.10518 3.10518ZM0 12C0 2.66616 2.66616 0 12 0C21.3293 0 24 2.66616 24 12C24 21.3338 21.3247 24 12 24C2.6753 24 0 21.3338 0 12Z"
+					fill="currentColor"
+					className="text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
+				/>
+				<path
+					d="M10.4541 16.029H9.95408V16.529V19.0747H6.92969V5.5H11.6065C14.6273 5.5 17.0745 7.86385 17.0745 10.7668C17.0745 13.6692 14.6278 16.029 11.6065 16.029H10.4541ZM9.95408 12.6189V13.1189H10.4541H11.6065C12.9545 13.1189 14.0501 12.0653 14.0501 10.7622C14.0501 9.45907 12.9545 8.40549 11.6065 8.40549H10.4541H9.95408V8.90549V12.6189Z"
+					stroke="currentColor"
+					className="text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
+				/>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M6 5.42969H11.1768C14.4604 5.42969 17.1448 7.99066 17.1448 11.1919C17.1448 14.3931 14.4558 16.9541 11.1768 16.9541H10.0244V19.9998H6V5.42969ZM6.85976 6.28487V19.1446H9.16921V16.0989H11.1814C14.0213 16.0989 16.2896 13.8855 16.2896 11.1919C16.2896 8.49829 14.0168 6.28487 11.1814 6.28487H6.85976ZM9.16921 8.47542H11.1814C12.7134 8.47542 13.9848 9.67359 13.9848 11.1919C13.9848 12.7056 12.7134 13.9083 11.1814 13.9083H9.16921V8.47542ZM10.0244 9.3306V13.044H11.1768C12.2652 13.044 13.1204 12.198 13.1204 11.1873C13.1204 10.1766 12.2652 9.3306 11.1768 9.3306H10.0244Z"
+					fill="currentColor"
+					className="text-gray-600 hover:text-primary-950 dark:text-secondary-400 dark:hover:text-primary-950"
+				/>
+			</svg>
+		)
+	},
+	{
 		name: 'Linkedin',
 		href: 'https://www.linkedin.com/in/nandanipaliwal',
 		icon: (props: SVGAttributes<SVGElement>) => (

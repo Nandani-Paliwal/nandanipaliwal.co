@@ -6,10 +6,10 @@ import Descriptions from './descriptions'
 const data = [
 	{
 		i: 1,
-		title: 'Enseedling',
+		title: 'Flatshare',
 		description:
-			'Developed enseedling.com using Next.js and TypeScript, with Framer Motion animations and Hashnode CMS, resulting in $350K sponsorship and significant performance and engagement improvements.',
-		href: 'https://www.enseedling.com/',
+			'Developing a flatmate matching marketplace using Next.js, Tailwind CSS, and Zustand; established a scalable monorepo with Turborepo, reducing code duplicity by 30%, and set up Storybook, saving 40% development time and enhancing collaboration.',
+		href: '',
 		speed: 0.5
 	},
 	{
@@ -23,15 +23,22 @@ const data = [
 	},
 	{
 		i: 3,
-		title: 'Goldman',
+		title: 'Enseedling',
 		description:
-			'Integrated Typeform CMS for dynamic forms, enhancing engagement and data collection, and implemented an EMI calculator, increasing user session time by 30%.',
-		href: 'https://goldmangroup.in',
-
+			'Developed enseedling.com using Next.js and TypeScript, with Framer Motion animations and Hashnode CMS, resulting in $350K sponsorship and significant performance and engagement improvements.',
+		href: 'https://www.enseedling.com/',
 		speed: 0.67
 	},
 	{
 		i: 4,
+		title: 'BathFitting',
+		description:
+			'Designed and launched a responsive e-commerce website for Bath Fitting Solution, enhancing their online presence. Integrated SMTP for direct inbox messaging, boosting user engagement. Added a filter feature, reducing search time by 20%.',
+		href: 'https://www.bathfittingsolution.com/',
+		speed: 0.8
+	},
+	{
+		i: 5,
 		title: 'OppNexus',
 		description:
 			'Developed a MERN stack platform for job applications with real-time tracking, RESTful APIs, secure authentication, and MongoDB, enhancing full-stack development and web security skills.',
@@ -40,20 +47,11 @@ const data = [
 		speed: 0.8
 	},
 	{
-		i: 5,
-		title: 'GDSC',
+		i: 6,
+		title: 'GDSC Lead',
 		description:
 			'Selected as Lead for the inaugural Google Developer Student Club at BU from 400 candidates, orchestrating 50+ events with industry experts to enhance community learning and engagement.',
 		href: 'https://g.dev/nandanipaliwal',
-
-		speed: 0.8
-	},
-	{
-		i: 6,
-		title: 'MLSA',
-		description:
-			'Mentored 100+ new MLSAs as Beta MLSA, organizing 10+ events on Git, GitHub, and React, leveraging both online and in-person formats.',
-		href: 'https://mvp.microsoft.com/en-US/studentambassadors/profile/c652a88b-92a4-44f3-8389-32c28348d312',
 		speed: 0.8
 	}
 ]
