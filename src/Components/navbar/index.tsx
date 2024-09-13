@@ -48,7 +48,7 @@ function MobileNavLink({ children, ...props }: any) {
 
 const Header = () => {
 	return (
-		<header className="fixed z-[9999] w-full bg-transparent">
+		<Popover className="fixed z-[9999] w-full bg-transparent">
 			<nav className="mx-auto max-w-xl md:max-w-2xl xl:max-w-7xl">
 				<div className="relative z-50 mx-3  mt-5 flex items-center justify-between rounded-full border border-dark bg-white px-2 py-2 dark:bg-secondarydark sm:px-8">
 					<div className="relative z-10 flex items-center gap-16">
@@ -111,7 +111,7 @@ const Header = () => {
 														y: -32,
 														transition: { duration: 0.2 }
 													}}
-													className="absolute inset-x-0 top-20 z-0 origin-top rounded-2xl border border-dark bg-white px-6 py-6 shadow-2xl shadow-gray-900/20 dark:bg-secondarydark"
+													className="absolute inset-x-0 top-20 z-[99999] origin-top rounded-2xl border border-dark bg-white px-6 py-6 shadow-2xl shadow-gray-900/20 "
 												>
 													<div className="flex flex-col items-center justify-center space-y-2">
 														<MobileNavLink href="/blog" target="_blank">
@@ -145,7 +145,7 @@ const Header = () => {
 					</div>
 				</div>
 			</nav>
-		</header>
+		</Popover>
 	)
 }
 
